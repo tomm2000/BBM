@@ -1,7 +1,7 @@
 --========================================================================================================================
 -- Religion beliefs
 --========================================================================================================================
--- 'Icons' reliquary belief only gives 1 relic instead of 2 on cs conversion
+-- "Icons" reliquary belief only gives 1 relic instead of 2 on cs conversion
 UPDATE LocalizedText
 SET Text = "BBM | +1 Relic for first-time conversion of a City-State"
 WHERE Tag = "LOC_BELIEF_BONUS_9_DESCRIPTION";
@@ -18,12 +18,12 @@ WHERE Tag = "LOC_BELIEF_BONUS_11_DESCRIPTION";
 
 -- "Lay Followers" gives 2 relics instead of 1 for conversion of 10 (rural) pop city
 UPDATE LocalizedText
-SET Text = "BBM | +2 Relic for the first time conversion of another Civilization's settlement with at least 10 Rural Population"
+SET Text = "BBM | +2 Relic for the first time conversion of another Civilization’s settlement with at least 10 Rural Population"
 WHERE Tag = "LOC_BELIEF_BONUS_15_DESCRIPTION";
 
 -- "Ecclesiasticism" gives 2 relics instead of 1 for conversion of 10 (urban) pop city
 UPDATE LocalizedText
-SET Text = "BBM | +2 Relic for the first time conversion of another Civilization's settlement with at least 10 Urban Population"
+SET Text = "BBM | +2 Relic for the first time conversion of another Civilization’s settlement with at least 10 Urban Population"
 WHERE Tag = "LOC_BELIEF_BONUS_16_DESCRIPTION";
 
 -- ========================================================================================================================
