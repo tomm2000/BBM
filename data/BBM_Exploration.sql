@@ -51,7 +51,7 @@ WHERE ModifierId = 'ATTACH_GRASSLAND_CITIES_FOLLOWING_SCIENCE' and Name = 'Amoun
 -- 'Sky Gods' belief only gives 0.5 culture per plains instead of 1
 UPDATE ModifierArguments
 SET Value = 0.5
-WHERE ModifierId = 'ATTACH_PLAINS_CITIES_FOLLOWING_SCIENCE' and Name = 'Amount';
+WHERE ModifierId = 'ATTACH_PLAINS_CITIES_FOLLOWING_SCIENCE' and Name = 'Amount'
 --========================================================================================================================
 --========================================================================================================================
 

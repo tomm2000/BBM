@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="balanced_by_monkeys" version="1"
-	xmlns="ModInfo">
+<Mod id="balanced_by_monkeys" version="1" xmlns="ModInfo">
 	<Properties>
 		<Name>BBM - Balanced By Monkeys</Name>
 		<Description>Surely a pack of monkeys can do a better job of balancing this game</Description>
@@ -11,6 +10,7 @@
 		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
 	</Dependencies>
 	<ActionCriteria>
+    <!-- Age criteria -->
 		<Criteria id="antiquity-age-current">
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
 		</Criteria>
@@ -20,6 +20,8 @@
 		<Criteria id="modern-age-current">
 			<AgeInUse>AGE_MODERN</AgeInUse>
 		</Criteria>
+
+    <!-- Persistent criteria -->
     <Criteria id="antiquity-age-persist" any="true">
       <AgeInUse>AGE_ANTIQUITY</AgeInUse>
       <AgeInUse>AGE_EXPLORATION</AgeInUse>
@@ -29,6 +31,9 @@
 			<AgeInUse>AGE_EXPLORATION</AgeInUse>
 			<AgeInUse>AGE_MODERN</AgeInUse>
 		</Criteria>
+    <Criteria id="modern-age-persist" any="true">
+      <AgeInUse>AGE_MODERN</AgeInUse>
+    </Criteria>
 		<Criteria id="always">
 			<AlwaysMet></AlwaysMet>
 		</Criteria>
@@ -36,10 +41,35 @@
 
 	<ActionGroups>
 <!-- Antiquity age changes | 10 -->
+    <ActionGroup id="bbm-antiquity-age-changes" scope="game" criteria="antiquity-age-current">
+      <Properties>
+        <LoadOrder>13</LoadOrder>
+      </Properties>
+      <Actions>
+        <UpdateText>
+          <Item>localization/BBM_Antiquity_LOC.sql</Item>
+        </UpdateText>
+        <UpdateDatabase>
+          <Item>data/BBM_Antiquity.sql</Item>
+        </UpdateDatabase>
+      </Actions>
+    </ActionGroup>
 <!-- Antiquity age persistent changes | 11 -->
-<!-- Antiquity age localization changes | 12 -->
+    <ActionGroup id="bbm-antiquity-age-persistent-changes" scope="game" criteria="antiquity-age-persist">
+      <Properties>
+        <LoadOrder>13</LoadOrder>
+      </Properties>
+      <Actions>
+        <UpdateText>
+          <Item>localization/BBM_Antiquity_Persist_LOC.sql</Item>
+        </UpdateText>
+        <UpdateDatabase>
+          <Item>data/BBM_Antiquity_Persist.sql</Item>
+        </UpdateDatabase>
+      </Actions>
+    </ActionGroup>
 
-<!-- Exploration age changes | 13 -->
+<!-- Exploration age changes | 12 -->
     <ActionGroup id="bbm-exploration-age-changes" scope="game" criteria="exploration-age-current">
       <Properties>
         <LoadOrder>13</LoadOrder>
@@ -53,13 +83,50 @@
         </UpdateDatabase>
       </Actions>
     </ActionGroup>
-<!-- Exploration age persistent changes | 14 -->
-<!-- Exploration age localization changes | 15 -->
+<!-- Exploration age persistent changes | 13 -->
+    <ActionGroup id="bbm-exploration-age-persistent-changes" scope="game" criteria="exploration-age-persist">
+      <Properties>
+        <LoadOrder>13</LoadOrder>
+      </Properties>
+      <Actions>
+        <UpdateText>
+          <Item>localization/BBM_Exploration_Persist_LOC.sql</Item>
+        </UpdateText>
+        <UpdateDatabase>
+          <Item>data/BBM_Exploration_Persist.sql</Item>
+        </UpdateDatabase>
+      </Actions>
+    </ActionGroup>
 
-<!-- Modern age changes | 16 -->
-<!-- Modern age persistent changes | 17 -->
-<!-- Modern age localization changes | 18 -->
+<!-- Modern age changes | 14 -->
+    <ActionGroup id="bbm-modern-age-changes" scope="game" criteria="modern-age-current">
+      <Properties>
+        <LoadOrder>13</LoadOrder>
+      </Properties>
+      <Actions>
+        <UpdateText>
+          <Item>localization/BBM_Modern_LOC.sql</Item>
+        </UpdateText>
+        <UpdateDatabase>
+          <Item>data/BBM_Modern.sql</Item>
+        </UpdateDatabase>
+      </Actions>
+    </ActionGroup>
+<!-- Modern age persistent changes | 15 -->
+    <ActionGroup id="bbm-modern-age-persistent-changes" scope="game" criteria="modern-age-persist">
+      <Properties>
+        <LoadOrder>13</LoadOrder>
+      </Properties>
+      <Actions>
+        <UpdateText>
+          <Item>localization/BBM_Modern_Persist_LOC.sql</Item>
+        </UpdateText>
+        <UpdateDatabase>
+          <Item>data/BBM_Modern_Persist.sql</Item>
+        </UpdateDatabase>
+      </Actions>
+    </ActionGroup>
 
-<!-- Leader changes | 19 -->
+<!-- Leader changes | 16 -->
 	</ActionGroups>
 </Mod>
