@@ -40,7 +40,7 @@
 	</ActionCriteria>
 
 	<ActionGroups>
-<!-- Antiquity age changes | 10 -->
+<!-- Antiquity age changes : 10 -->
     <ActionGroup id="bbm-antiquity-age-changes" scope="game" criteria="antiquity-age-current">
       <Properties>
         <LoadOrder>13</LoadOrder>
@@ -54,7 +54,7 @@
         </UpdateDatabase>
       </Actions>
     </ActionGroup>
-<!-- Antiquity age persistent changes | 11 -->
+<!-- Antiquity age persistent changes : 11 -->
     <ActionGroup id="bbm-antiquity-age-persistent-changes" scope="game" criteria="antiquity-age-persist">
       <Properties>
         <LoadOrder>13</LoadOrder>
@@ -69,7 +69,7 @@
       </Actions>
     </ActionGroup>
 
-<!-- Exploration age changes | 12 -->
+<!-- Exploration age changes : 12 -->
     <ActionGroup id="bbm-exploration-age-changes" scope="game" criteria="exploration-age-current">
       <Properties>
         <LoadOrder>13</LoadOrder>
@@ -83,7 +83,7 @@
         </UpdateDatabase>
       </Actions>
     </ActionGroup>
-<!-- Exploration age persistent changes | 13 -->
+<!-- Exploration age persistent changes : 13 -->
     <ActionGroup id="bbm-exploration-age-persistent-changes" scope="game" criteria="exploration-age-persist">
       <Properties>
         <LoadOrder>13</LoadOrder>
@@ -98,7 +98,7 @@
       </Actions>
     </ActionGroup>
 
-<!-- Modern age changes | 14 -->
+<!-- Modern age changes : 14 -->
     <ActionGroup id="bbm-modern-age-changes" scope="game" criteria="modern-age-current">
       <Properties>
         <LoadOrder>13</LoadOrder>
@@ -112,7 +112,7 @@
         </UpdateDatabase>
       </Actions>
     </ActionGroup>
-<!-- Modern age persistent changes | 15 -->
+<!-- Modern age persistent changes : 15 -->
     <ActionGroup id="bbm-modern-age-persistent-changes" scope="game" criteria="modern-age-persist">
       <Properties>
         <LoadOrder>13</LoadOrder>
@@ -127,6 +127,6 @@
       </Actions>
     </ActionGroup>
 
-<!-- Leader changes | 16 -->
+<!-- Leader changes : 16 -->
 	</ActionGroups>
 </Mod>
