@@ -1,10 +1,32 @@
 --========================================================================================================================
 -- Religion beliefs
 --========================================================================================================================
--- 'Icons' reliquary belief only gives 1 relic instead of 2
+-- 'Icons' reliquary belief only gives 1 relic instead of 2 on cs conversion
 UPDATE ModifierArguments
 SET Value = 1
 WHERE ModifierId = 'ATTACH_RELIC_CITY_STATE' and Name = 'Amount';
+
+-- 'Brahmanism' reliquary belief gives 3 relics instead of 4 on capital conversion
+UPDATE ModifierArguments
+SET Value = 3
+WHERE ModifierId = 'ATTACH_RELIC_CAPITAL' and Name = 'Amount';
+
+-- 'Reliquaries' belief gives 2 relics instead of 1 on temple city conversion
+UPDATE ModifierArguments
+SET Value = 2
+WHERE ModifierId = 'ATTACH_RELIC_CONVERTING_RELIGIOUS_BUILDING' and Name = 'Amount';
+
+-- 'Lay Followers' gives 2 relics instead of 1 for conversion of 10 (rural) pop city
+UPDATE ModifierArguments
+SET Value = 2
+WHERE ModifierId = 'ATTACH_RELIC_RURAL_POP' and Name = 'Amount';
+
+-- 'Ecclesiasticism' gives 2 relics instead of 1 for conversion of 10 (urban) pop city
+UPDATE ModifierArguments
+SET Value = 2
+WHERE ModifierId = 'ATTACH_RELIC_URBAN_POP' and Name = 'Amount';
+
+-- ========================================================================================================================
 
 -- 'Reincarnation' belief only gives 0.5 science per tropical instead of 2
 UPDATE ModifierArguments
