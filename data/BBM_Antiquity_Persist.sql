@@ -10,6 +10,16 @@ WHERE Feature_CityYieldType = 'ULURU_DESERT_CULTURE';
 -- ZHANGJIAJIE: from +2 culture on rough terrain tiles to +1 culture on rough terrain tiles
 UPDATE Feature_CityYields
 SET YieldType = 'YIELD_CULTURE'
-WHERE Feature_CityYieldType = 'ZHANGJIAJIE_ROUGH_CULTURE'
+WHERE Feature_CityYieldType = 'ZHANGJIAJIE_ROUGH_CULTURE';
+--========================================================================================================================
+--========================================================================================================================
+
+--========================================================================================================================
+-- Spawn biases
+--========================================================================================================================
+-- Egypt buffed navigable river bias from 20 to 200
+UPDATE StartBiasTerrains
+SET Score = 200
+WHERE CivilizationType = 'CIVILIZATION_EGYPT'
 --========================================================================================================================
 --========================================================================================================================
