@@ -83,7 +83,7 @@ WHERE ID = 'PantheonAltarCampGold';
 -- culture legacy path requires 2,4,6 wonders instead of 2,4,7
 UPDATE AgeProgressionMilestones
 SET RequiredPathPoints = 6
-WHERE AgeProgressionMilestoneType = 'ANTIQUITY_CULTURE_MILESTONE_3'
+WHERE AgeProgressionMilestoneType = 'ANTIQUITY_CULTURE_MILESTONE_3';
 --========================================================================================================================
 --========================================================================================================================
 
@@ -94,6 +94,6 @@ WHERE AgeProgressionMilestoneType = 'ANTIQUITY_CULTURE_MILESTONE_3'
 -- culture, +1 culture per suized city on monuments (from +2)
 UPDATE ModifierArguments
 SET Value = 1
-WHERE ModifierId = 'ATTACH_MONUMENT_CULTURE' and Name = 'Amount';
+WHERE ModifierId = 'ATTACH_MONUMENT_CULTURE' and Name = 'Amount'
 --========================================================================================================================
 --========================================================================================================================

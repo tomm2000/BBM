@@ -49,7 +49,7 @@ WHERE Tag = 'LOC_PANTHEON_BONUS_15_DESCRIPTION';
 -- 'God of the Forest' pantheon, +2 (from +1) gold on camps and woodcutters
 UPDATE LocalizedText
 SET Text = 'BBM : +2[icon:YIELD_GOLD] Gold on Camps and Woodcutters in Settlements with an Altar. Warehouse bonus.'
-WHERE Tag = 'LOC_PANTHEON_BONUS_7_DESCRIPTION'
+WHERE Tag = 'LOC_PANTHEON_BONUS_7_DESCRIPTION';
 --========================================================================================================================
 --========================================================================================================================
 
@@ -71,6 +71,6 @@ WHERE Tag = 'LOC_LEGACY_PATH_ANTIQUITY_CULTURE_DESCRIPTION';
 -- culture, +1 culture per suized city on monuments (from +2)
 UPDATE LocalizedText
 SET Text = 'BBM : +1[icon:YIELD_CULTURE] Culture to Monuments for every City-State you are Suzerain of.'
-WHERE Tag = 'LOC_CITY_STATE_BONUS_ANTIQUITY_7_DESCRIPTION';
+WHERE Tag = 'LOC_CITY_STATE_BONUS_ANTIQUITY_7_DESCRIPTION'
 --========================================================================================================================
 --========================================================================================================================
