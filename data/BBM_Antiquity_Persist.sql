@@ -20,6 +20,15 @@ WHERE Feature_CityYieldType = 'ZHANGJIAJIE_ROUGH_CULTURE';
 -- Egypt buffed navigable river bias from 20 to 200
 UPDATE StartBiasTerrains
 SET Score = 200
-WHERE CivilizationType = 'CIVILIZATION_EGYPT'
+WHERE CivilizationType = 'CIVILIZATION_EGYPT';
+
+-- Egypt buffed desert bias from 5 to 20
+UPDATE StartBiasBiomes
+SET Score = 40
+WHERE CivilizationType = 'CIVILIZATION_EGYPT';
+
+-- Missisipi removed flat terrain bias
+DELETE FROM StartBiasTerrains
+WHERE CivilizationType = 'CIVILIZATION_MISSISSIPPIAN' AND TerrainType = 'TERRAIN_FLAT'
 --========================================================================================================================
 --========================================================================================================================

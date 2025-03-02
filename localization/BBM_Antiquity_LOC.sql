@@ -50,6 +50,11 @@ WHERE Tag = 'LOC_PANTHEON_BONUS_15_DESCRIPTION';
 UPDATE LocalizedText
 SET Text = 'BBM : +2[icon:YIELD_GOLD] Gold on Camps and Woodcutters in Settlements with an Altar. Warehouse bonus.'
 WHERE Tag = 'LOC_PANTHEON_BONUS_7_DESCRIPTION';
+
+-- rename 'Stone circles' to 'Tom's private pantheon'
+UPDATE LocalizedText
+SET Text = 'Tom’s private pantheon'
+WHERE Tag = 'LOC_PANTHEON_BONUS_16_NAME';
 --========================================================================================================================
 --========================================================================================================================
 
