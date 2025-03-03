@@ -96,6 +96,29 @@ WHERE AgeProgressionMilestoneType = 'ANTIQUITY_CULTURE_MILESTONE_3';
 -- culture, +1 culture per suized city on monuments (from +2)
 UPDATE ModifierArguments
 SET Value = 1
-WHERE ModifierId = 'ATTACH_MONUMENT_CULTURE' and Name = 'Amount'
+WHERE ModifierId = 'ATTACH_MONUMENT_CULTURE' and Name = 'Amount';
+
+-- culture, +2 (from +1) Social Policy slot.
+UPDATE ModifierArguments
+SET Value = 2
+WHERE ModifierId = 'ATTACH_TRADITION_SLOT' and Name = 'Amount';
+
+-- economic, lapis lazuli, +6 gold (from +4 prod) and +25% gold (from +5% gold) in the city
+UPDATE ModifierArguments
+SET Value = 6
+WHERE ModifierId = 'MOD_LAPIS_LAZULI_CITY_FLAT_PRODUCTION' and Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = 'YIELD_GOLD'
+WHERE ModifierId = 'MOD_LAPIS_LAZULI_CITY_FLAT_PRODUCTION' and Name = 'YieldType';
+
+UPDATE ModifierArguments
+SET Value = 25
+WHERE ModifierId = 'MOD_LAPIS_LAZULI_CITY_GOLD' and Name = 'Amount'
+
+-- economic, +2 gold (from +1) on gold buildings for each suized city state
+UPDATE ModifierArguments
+SET Value = 2
+WHERE ModifierId = 'ATTACH_GOLD_BUILDINGS_GOLD' and Name = 'Amount'
 --========================================================================================================================
 --========================================================================================================================

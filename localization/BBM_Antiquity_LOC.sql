@@ -76,6 +76,25 @@ WHERE Tag = 'LOC_LEGACY_PATH_ANTIQUITY_CULTURE_DESCRIPTION';
 -- culture, +1 culture per suized city on monuments (from +2)
 UPDATE LocalizedText
 SET Text = 'BBM : +1[icon:YIELD_CULTURE] Culture to Monuments for every City-State you are Suzerain of.'
-WHERE Tag = 'LOC_CITY_STATE_BONUS_ANTIQUITY_7_DESCRIPTION'
+WHERE Tag = 'LOC_CITY_STATE_BONUS_ANTIQUITY_7_DESCRIPTION';
+
+-- culture, +2 (from +1) Social Policy slot.
+UPDATE LocalizedText
+SET Text = 'BBM : +2 Social Policy slot.'
+WHERE Tag = 'LOC_CITY_STATE_BONUS_ANTIQUITY_9_DESCRIPTION';
+
+-- economic, lapis lazuli, +6 gold (from +4 prod) and +25% gold (from +5% gold) in the city
+UPDATE LocalizedText
+SET Text = 'BBM : Receive the Lapis Lazuli Resource in the Capital. Lapis Lazuli provides +6[icon:YIELD_GOLD] Gold and +25%[icon:YIELD_GOLD] Gold.'
+WHERE Tag = 'LOC_CITY_STATE_BONUS_ANTIQUITY_13_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'BBM : +6[icon:YIELD_GOLD] Gold, +25%[icon:YIELD_GOLD] Gold (Not Tradeable)'
+WHERE Tag = 'LOC_ANT_RESOURCE_LAPIS_LAZULI_TOOLTIP';
+
+-- economic, +2 gold (from +1) on gold buildings for each suized city state
+UPDATE LocalizedText
+SET Text = 'BBM : Gold buildings receive +2[icon:YIELD_GOLD] Gold for every City-State you are Suzerain of.'
+WHERE Tag = 'LOC_CITY_STATE_BONUS_ANTIQUITY_12_DESCRIPTION'
 --========================================================================================================================
 --========================================================================================================================
