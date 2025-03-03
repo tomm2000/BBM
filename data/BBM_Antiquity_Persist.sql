@@ -29,6 +29,26 @@ WHERE CivilizationType = 'CIVILIZATION_EGYPT';
 
 -- Missisipi removed flat terrain bias
 DELETE FROM StartBiasTerrains
-WHERE CivilizationType = 'CIVILIZATION_MISSISSIPPIAN' AND TerrainType = 'TERRAIN_FLAT'
+WHERE CivilizationType = 'CIVILIZATION_MISSISSIPPIAN' AND TerrainType = 'TERRAIN_FLAT';
+--========================================================================================================================
+--========================================================================================================================
+
+
+--========================================================================================================================
+-- Rural districts
+--========================================================================================================================
+-- New: Farm 1 food adjacency for every adjacent farm
+INSERT INTO Constructible_Adjacencies (ConstructibleType, YieldChangeId, RequiresActivation)
+VALUES ('IMPROVEMENT_FARM', 'BBM_FarmChainFood', 0);
+
+INSERT INTO "Adjacency_YieldChanges" ("ID","AdjacentBiome","AdjacentConstructible","AdjacentConstructibleTag","AdjacentDistrict","AdjacentFeature","AdjacentFeatureClass","AdjacentLake","AdjacentNaturalWonder","AdjacentNavigableRiver","AdjacentQuarter","AdjacentResource","AdjacentResourceClass","AdjacentRiver","AdjacentSeaResource","AdjacentTerrain","AdjacentUniqueQuarter","AdjacentUniqueQuarterType","Age","ProjectMaxYield","Self","TilesRequired","YieldChange","YieldType")
+VALUES ('BBM_FarmChainFood',NULL,'IMPROVEMENT_FARM',NULL,NULL,NULL,NULL,0,0,0,0,0,'NO_RESOURCECLASS',0,0,NULL,0,NULL,NULL,1,0,1,1.0,'YIELD_GOLD');
+
+-- New: Farms get +1 production for adjacent granaries
+INSERT INTO Constructible_Adjacencies (ConstructibleType, YieldChangeId, RequiresActivation)
+VALUES ('IMPROVEMENT_FARM', 'BBM_FarmGranaryProduction', 0);
+
+INSERT INTO "Adjacency_YieldChanges" ("ID","AdjacentBiome","AdjacentConstructible","AdjacentConstructibleTag","AdjacentDistrict","AdjacentFeature","AdjacentFeatureClass","AdjacentLake","AdjacentNaturalWonder","AdjacentNavigableRiver","AdjacentQuarter","AdjacentResource","AdjacentResourceClass","AdjacentRiver","AdjacentSeaResource","AdjacentTerrain","AdjacentUniqueQuarter","AdjacentUniqueQuarterType","Age","ProjectMaxYield","Self","TilesRequired","YieldChange","YieldType")
+VALUES ('BBM_FarmGranaryProduction',NULL,'BUILDING_GRANARY',NULL,NULL,NULL,NULL,0,0,0,0,0,'NO_RESOURCECLASS',0,0,NULL,0,NULL,NULL,1,0,1,1.0,'YIELD_PRODUCTION');
 --========================================================================================================================
 --========================================================================================================================

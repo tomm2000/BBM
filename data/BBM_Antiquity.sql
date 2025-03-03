@@ -114,7 +114,7 @@ WHERE ModifierId = 'MOD_LAPIS_LAZULI_CITY_FLAT_PRODUCTION' and Name = 'YieldType
 
 UPDATE ModifierArguments
 SET Value = 25
-WHERE ModifierId = 'MOD_LAPIS_LAZULI_CITY_GOLD' and Name = 'Amount'
+WHERE ModifierId = 'MOD_LAPIS_LAZULI_CITY_GOLD' and Name = 'Amount';
 
 -- economic, +2 gold (from +1) on gold buildings for each suized city state
 UPDATE ModifierArguments
