@@ -6,9 +6,9 @@ UPDATE Feature_CityYields
 SET YieldChange = 1
 WHERE Feature_CityYieldType = 'ULURU_DESERT_CULTURE';
 
--- ZHANGJIAJIE: from +2 culture on rough terrain tiles to +1 culture on rough terrain tiles
+-- ZHANGJIAJIE: from +2 culture on rough terrain tiles to +2 happiness on rough terrain tiles
 UPDATE Feature_CityYields
-SET YieldChange = 1
+SET YieldType = 'YIELD_HAPPINESS',
 WHERE Feature_CityYieldType = 'ZHANGJIAJIE_ROUGH_CULTURE';
 --========================================================================================================================
 --========================================================================================================================
@@ -57,19 +57,6 @@ VALUES ('BBM_FarmGranaryProduction',NULL,'BUILDING_GRANARY',NULL,NULL,NULL,NULL,
 --========================================================================================================================
 -- Fishing Quay & Fishing boat
 --========================================================================================================================
--- New: Fishing boat gets +2 gold for adjacent fishing quay
--- INSERT INTO Constructible_Adjacencies (ConstructibleType, YieldChangeId, RequiresActivation)
--- VALUES ('IMPROVEMENT_FISHING_BOAT', 'BBM_BoatQuayGold', 0);
-
--- INSERT INTO Adjacency_YieldChanges ('ID','AdjacentBiome','AdjacentConstructible','AdjacentConstructibleTag','AdjacentDistrict','AdjacentFeature','AdjacentFeatureClass','AdjacentLake','AdjacentNaturalWonder','AdjacentNavigableRiver','AdjacentQuarter','AdjacentResource','AdjacentResourceClass','AdjacentRiver','AdjacentSeaResource','AdjacentTerrain','AdjacentUniqueQuarter','AdjacentUniqueQuarterType','Age','ProjectMaxYield','Self','TilesRequired','YieldChange','YieldType')
--- VALUES ('BBM_BoatQuayGold',NULL,'BUILDING_FISHING_QUAY',NULL,NULL,NULL,NULL,0,0,0,0,0,'NO_RESOURCECLASS',0,0,NULL,0,NULL,NULL,1,0,1,2.0,'YIELD_GOLD');
-
--- on resource boats too
--- INSERT INTO Constructible_Adjacencies (ConstructibleType, YieldChangeId, RequiresActivation)
--- VALUES ('IMPROVEMENT_FISHING_BOAT_RESOURCE', 'BBM_BoatResourceQuayGold', 0);
-
--- INSERT INTO 'Adjacency_YieldChanges' ('ID','AdjacentBiome','AdjacentConstructible','AdjacentConstructibleTag','AdjacentDistrict','AdjacentFeature','AdjacentFeatureClass','AdjacentLake','AdjacentNaturalWonder','AdjacentNavigableRiver','AdjacentQuarter','AdjacentResource','AdjacentResourceClass','AdjacentRiver','AdjacentSeaResource','AdjacentTerrain','AdjacentUniqueQuarter','AdjacentUniqueQuarterType','Age','ProjectMaxYield','Self','TilesRequired','YieldChange','YieldType')
--- VALUES ('BBM_BoatResourceQuayGold',NULL,'BUILDING_FISHING_QUAY',NULL,NULL,NULL,NULL,0,0,0,0,0,'RESOURCE_FISH',0,0,NULL,0,NULL,NULL,1,0,1,1.0,'YIELD_GOLD');
 
 -- New: Fishing quay +1 gold on fishing boats. warehouse bonus
 INSERT INTO Constructible_WarehouseYields (ConstructibleType, YieldChangeId, RequiresActivation)
@@ -77,13 +64,6 @@ VALUES ('BUILDING_FISHING_QUAY', 'BBM_FishingQuayBoatGold', 0);
 
 INSERT INTO Warehouse_YieldChanges ('ID', 'Age', 'BiomeInCity', 'ConstructibleInCity', 'DistrictInCity', 'FeatureClassInCity', 'FeatureInCity', 'LakeInCity', 'MinorRiverInCity', 'NaturalWonderInCity', 'NavigableRiverInCity', 'Overbuilt', 'ResourceInCity', 'RouteInCity', 'TerrainInCity', 'TerrainTagInCity', 'YieldChange', 'YieldType')
 VALUES ('BBM_FishingQuayBoatGold', NULL, NULL, 'IMPROVEMENT_FISHING_BOAT', NULL, NULL, NULL, 0, 0, 0, 0, 0, 1, 0, NULL, NULL, 1, 'YIELD_GOLD')
-
--- On resource boats too
--- INSERT INTO Constructible_WarehouseYields (ConstructibleType, YieldChangeId, RequiresActivation)
--- VALUES ('BUILDING_FISHING_QUAY', 'BBM_FishingQuayResourceBoatGold', 0);
-
--- INSERT INTO Warehouse_YieldChanges ('ID','Age','BiomeInCity','ConstructibleInCity','DistrictInCity','FeatureClassInCity','FeatureInCity','LakeInCity','MinorRiverInCity','NaturalWonderInCity','NavigableRiverInCity','Overbuilt','ResourceInCity','RouteInCity','TerrainInCity','TerrainTagInCity','YieldChange','YieldType')
--- VALUES ('BBM_FishingQuayResourceBoatGold',NULL,NULL,'IMPROVEMENT_FISHING_BOAT',NULL,NULL,NULL,0,0,0,0,0,1,0,NULL,NULL,2,'YIELD_GOLD')
 
 --========================================================================================================================
 --========================================================================================================================
