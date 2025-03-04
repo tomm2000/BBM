@@ -8,6 +8,7 @@ Balance mod for civilization 7
 #### Zhangjiajie 
 +2 Happiness and +4 Production per Age. +2 Happiness (from +2 culture) on Rough Terrain in this Settlement.
 
+## Food improvements balance
 #### Farms & Granary
 - New: Farm gets 1 food adjacency for every adjacent farm
 - New: Farms get +1 production for adjacent granaries
