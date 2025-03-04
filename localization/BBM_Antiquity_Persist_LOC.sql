@@ -48,13 +48,13 @@ UPDATE LocalizedText
 SET Text = 'BBM : Every time you research a Technology, this Settlement gains[icon:YIELD_PRODUCTION] Production equal to 10% of its cost.'
 WHERE Tag = 'LOC_QUARTER_UWAYBIL_KUH_TOOLTIP';
 
--- increased gold maintenance for Uwaybil K'uh and K'uh Nah buildings (10 gold instead of 2)
+-- max 1 player instances for Uwaybil K'uh and K'uh Nah buildings
 UPDATE LocalizedText
-SET Text = 'BBM : +3[icon:YIELD_HAPPINESS] Happiness. +1[icon:YIELD_CULTURE] Culture Adjacency for Quarters and Wonders. Heavy [icon:YIELD_GOLD] gold maintenance. Mayan Unique Happiness Building. Ageless.'
+SET Text = 'BBM : +3[icon:YIELD_HAPPINESS] Happiness. +1[icon:YIELD_CULTURE] Culture Adjacency for Quarters and Wonders. Can only be built once per empire. Mayan Unique Happiness Building. Ageless.'
 WHERE Tag = 'LOC_BUILDING_JALAW_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'BBM : +3[icon:YIELD_SCIENCE] Science. +2[icon:YIELD_SCIENCE] Science if placed on Vegetation. +1[icon:YIELD_SCIENCE] Science Adjacency for Wonders. Heavy [icon:YIELD_GOLD] gold maintenance. Mayan Unique Science Building. Ageless.'
+SET Text = 'BBM : +3[icon:YIELD_SCIENCE] Science. +2[icon:YIELD_SCIENCE] Science if placed on Vegetation. +1[icon:YIELD_SCIENCE] Science Adjacency for Wonders. Can only be built once per empire. Mayan Unique Science Building. Ageless.'
 WHERE Tag = 'LOC_BUILDING_KUH_NAH_DESCRIPTION'
 
 --========================================================================================================================
