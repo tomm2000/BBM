@@ -9,7 +9,7 @@
 #### Zhangjiajie 
 +2  Happiness :slightly_smiling_face: and +4 Production :hammer: per Age. +2  Happiness :slightly_smiling_face: (from +2 Culture :musical_note:) on Rough Terrain in this Settlement.
 
-## Food :corn: improvements balance
+## Food improvements balance
 #### Farms & Granary
 - New: Farm gets 1 Food :corn: adjacency for every adjacent farm
 - New: Farms get +1 Production :hammer: for adjacent granaries
@@ -51,11 +51,11 @@ The Altar receives a +2 Gold :coin: Adjacency (from +1  Happiness :slightly_smil
 +2 (from +1) Gold :coin: on Camps and Woodcutters in Settlements with an Altar. Warehouse bonus.
 
 ## Legacy Paths
-#### Culture :musical_note: legacy path
+#### Cultural legacy path
 House 6 (from 7) World Wonders in your empire. 
 
 ## Independent people
-#### Culture :musical_note: suizerain bonus
+#### Cultural suizerain bonus
 - +1 (from +2) Culture :musical_note: to Monuments for every City-State you are Suzerain of.
 - +2 (from +1) Social Policy slot.
 
