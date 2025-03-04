@@ -42,14 +42,14 @@ INSERT INTO Constructible_Adjacencies (ConstructibleType, YieldChangeId, Require
 VALUES ('IMPROVEMENT_FARM', 'BBM_FarmChainFood', 0);
 
 INSERT INTO 'Adjacency_YieldChanges' ('ID','AdjacentBiome','AdjacentConstructible','AdjacentConstructibleTag','AdjacentDistrict','AdjacentFeature','AdjacentFeatureClass','AdjacentLake','AdjacentNaturalWonder','AdjacentNavigableRiver','AdjacentQuarter','AdjacentResource','AdjacentResourceClass','AdjacentRiver','AdjacentSeaResource','AdjacentTerrain','AdjacentUniqueQuarter','AdjacentUniqueQuarterType','Age','ProjectMaxYield','Self','TilesRequired','YieldChange','YieldType')
-VALUES ('BBM_FarmChainFood',NULL,'IMPROVEMENT_FARM',NULL,NULL,NULL,NULL,0,0,0,0,0,'NO_RESOURCECLASS',0,0,NULL,0,NULL,NULL,1,0,1,1.0,'YIELD_GOLD');
+VALUES ('BBM_FarmChainFood',NULL,'IMPROVEMENT_FARM',NULL,NULL,NULL,NULL,0,0,0,0,0,'NO_RESOURCECLASS',0,0,NULL,0,NULL,NULL,1,0,1,1.0,'YIELD_FOOD');
 
--- New: Farms get +1 production for adjacent granaries
+-- New: Farms get +2 gold for adjacent granaries
 INSERT INTO Constructible_Adjacencies (ConstructibleType, YieldChangeId, RequiresActivation)
 VALUES ('IMPROVEMENT_FARM', 'BBM_FarmGranaryProduction', 0);
 
 INSERT INTO 'Adjacency_YieldChanges' ('ID','AdjacentBiome','AdjacentConstructible','AdjacentConstructibleTag','AdjacentDistrict','AdjacentFeature','AdjacentFeatureClass','AdjacentLake','AdjacentNaturalWonder','AdjacentNavigableRiver','AdjacentQuarter','AdjacentResource','AdjacentResourceClass','AdjacentRiver','AdjacentSeaResource','AdjacentTerrain','AdjacentUniqueQuarter','AdjacentUniqueQuarterType','Age','ProjectMaxYield','Self','TilesRequired','YieldChange','YieldType')
-VALUES ('BBM_FarmGranaryProduction',NULL,'BUILDING_GRANARY',NULL,NULL,NULL,NULL,0,0,0,0,0,'NO_RESOURCECLASS',0,0,NULL,0,NULL,NULL,1,0,1,1.0,'YIELD_PRODUCTION');
+VALUES ('BBM_FarmGranaryProduction',NULL,'BUILDING_GRANARY',NULL,NULL,NULL,NULL,0,0,0,0,0,'NO_RESOURCECLASS',0,0,NULL,0,NULL,NULL,1,0,1,2.0,'YIELD_GOLD');
 --========================================================================================================================
 --========================================================================================================================
 
@@ -57,13 +57,22 @@ VALUES ('BBM_FarmGranaryProduction',NULL,'BUILDING_GRANARY',NULL,NULL,NULL,NULL,
 --========================================================================================================================
 -- Fishing Quay & Fishing boat
 --========================================================================================================================
-
 -- New: Fishing quay +1 gold on fishing boats. warehouse bonus
 INSERT INTO Constructible_WarehouseYields (ConstructibleType, YieldChangeId, RequiresActivation)
 VALUES ('BUILDING_FISHING_QUAY', 'BBM_FishingQuayBoatGold', 0);
 
 INSERT INTO Warehouse_YieldChanges ('ID', 'Age', 'BiomeInCity', 'ConstructibleInCity', 'DistrictInCity', 'FeatureClassInCity', 'FeatureInCity', 'LakeInCity', 'MinorRiverInCity', 'NaturalWonderInCity', 'NavigableRiverInCity', 'Overbuilt', 'ResourceInCity', 'RouteInCity', 'TerrainInCity', 'TerrainTagInCity', 'YieldChange', 'YieldType')
-VALUES ('BBM_FishingQuayBoatGold', NULL, NULL, 'IMPROVEMENT_FISHING_BOAT', NULL, NULL, NULL, 0, 0, 0, 0, 0, 1, 0, NULL, NULL, 1, 'YIELD_GOLD')
+VALUES ('BBM_FishingQuayBoatGold', NULL, NULL, 'IMPROVEMENT_FISHING_BOAT', NULL, NULL, NULL, 0, 0, 0, 0, 0, 1, 0, NULL, NULL, 1, 'YIELD_GOLD');
+--========================================================================================================================
+--========================================================================================================================
 
+
+--========================================================================================================================
+-- Egypt Changes
+--========================================================================================================================
+-- Necropolis unique quarter: 200 (from 100) gold (on standard speed) when a wonder is built in the city
+UPDATE ModifierArguments
+SET Value = 200
+WHERE ModifierId = 'MOD_EGYPT_NECROPOLIS_GOLD_ON_WONDER_CREATED' AND Name = 'Amount'
 --========================================================================================================================
 --========================================================================================================================

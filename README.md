@@ -12,7 +12,7 @@
 ## Food improvements balance
 #### Farms & Granary
 - New: Farm gets 1 Food :corn: adjacency for every adjacent farm
-- New: Farms get +1 Production :hammer: for adjacent granaries
+- New: Farms get +2 Gold :coin: for adjacent granaries
 
 #### Fishing Quay & Fishing boat
 - New: Fishing quay +1 Gold :coin: on fishing boats. warehouse bonus.
@@ -67,6 +67,9 @@ House 6 (from 7) World Wonders in your empire.
 - Egypt buffed navigable river bias from 20 to 200
 - Egypt buffed desert bias from 5 to 20
 
+## Civilizations
+#### Egypt
+- Necropolis UQ: Grants 200 (from 100) Gold :coin: (on Standard Speed) when any Wonder is completed in this City.
 
 # Exploration Age
 ## Religions
