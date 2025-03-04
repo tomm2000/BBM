@@ -11,7 +11,7 @@
 
 ## Food improvements balance
 #### Farms & Granary
-:heavy_plus_sign: Farm gets 1 Food :corn: adjacency for every adjacent farm
+:heavy_plus_sign: Farm gets 1 Food :corn: adjacency for every adjacent farm \
 :heavy_plus_sign: New: Farms get +2 Gold :coin: for adjacent granaries
 
 #### Fishing Quay & Fishing boat
