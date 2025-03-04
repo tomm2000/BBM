@@ -11,11 +11,11 @@
 
 ## Food improvements balance
 #### Farms & Granary
-- :heavy_plus_sign: Farm gets 1 Food :corn: adjacency for every adjacent farm
-- :heavy_plus_sign: New: Farms get +2 Gold :coin: for adjacent granaries
+:heavy_plus_sign: Farm gets 1 Food :corn: adjacency for every adjacent farm
+:heavy_plus_sign: New: Farms get +2 Gold :coin: for adjacent granaries
 
 #### Fishing Quay & Fishing boat
-- :heavy_plus_sign: New: Fishing quay +1 Gold :coin: on fishing boats. warehouse bonus.
+:heavy_plus_sign: New: Fishing quay +1 Gold :coin: on fishing boats. warehouse bonus.
 
 
 # Antiquity Age
@@ -45,14 +45,14 @@
 :arrow_up: +50% (from +10%) Production :hammer: towards training Settlers in Cities with an Altar.
 
 #### Sacred Waters
-:arrows_clockwise: The Altar receives a +2 Gold :coin: Adjacency (from +1  Happiness :slightly_smiling_face:) for Coast, Lakes, and Navigable River tiles.
+:twisted_rightwards_arrows: The Altar receives a +2 Gold :coin: Adjacency (from +1  Happiness :slightly_smiling_face:) for Coast, Lakes, and Navigable River tiles.
 
 #### God of the Forest
 :arrow_up: +2 (from +1) Gold :coin: on Camps and Woodcutters in Settlements with an Altar. Warehouse bonus.
 
 ## Legacy Paths
 #### Cultural legacy path
-:arrows_clockwise: House 6 (from 7) World Wonders in your empire. 
+:twisted_rightwards_arrows: House 6 (from 7) World Wonders in your empire. 
 
 ## Independent people
 #### Cultural suizerain bonus
@@ -64,8 +64,8 @@
 - :arrow_up: Gold :coin: buildings receive +2 (from +1) Gold :coin: for every City-State you are Suzerain of.
 
 ## Spawn biases
-- :arrows_clockwise: Egypt buffed navigable river bias from 20 to 200
-- :arrows_clockwise: Egypt buffed desert bias from 5 to 20
+- :twisted_rightwards_arrows: Egypt buffed navigable river bias from 20 to 200
+- :twisted_rightwards_arrows: Egypt buffed desert bias from 5 to 20
 
 ## Civilizations
 #### Egypt
