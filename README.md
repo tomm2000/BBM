@@ -4,101 +4,101 @@
 # Persistent changes
 ## Natural wonders
 #### Uluru
-+6  Happiness :slightly_smiling_face: per Age. +1 (from +2) Culture :musical_note: on Desert Terrain in this Settlement
+:small_red_triangle_down: +6  Happiness :slightly_smiling_face: per Age. +1 (from +2) Culture :musical_note: on Desert Terrain in this Settlement
 
 #### Zhangjiajie 
-+2  Happiness :slightly_smiling_face: and +4 Production :hammer: per Age. +2  Happiness :slightly_smiling_face: (from +2 Culture :musical_note:) on Rough Terrain in this Settlement.
+:small_red_triangle_down: +2  Happiness :slightly_smiling_face: and +4 Production :hammer: per Age. +2  Happiness :slightly_smiling_face: (from +2 Culture :musical_note:) on Rough Terrain in this Settlement.
 
 ## Food improvements balance
 #### Farms & Granary
-- New: Farm gets 1 Food :corn: adjacency for every adjacent farm
-- New: Farms get +2 Gold :coin: for adjacent granaries
+- :heavy_plus_sign: Farm gets 1 Food :corn: adjacency for every adjacent farm
+- :heavy_plus_sign: New: Farms get +2 Gold :coin: for adjacent granaries
 
 #### Fishing Quay & Fishing boat
-- New: Fishing quay +1 Gold :coin: on fishing boats. warehouse bonus.
+- :heavy_plus_sign: New: Fishing quay +1 Gold :coin: on fishing boats. warehouse bonus.
 
 
 # Antiquity Age
 ## Pantheons
 #### Earth goddess
-The Altar receives a +2 (from +1)  Happiness :slightly_smiling_face: Adjacency for Mountains and Natural Wonders.
+:arrow_up: The Altar receives a +2 (from +1)  Happiness :slightly_smiling_face: Adjacency for Mountains and Natural Wonders.
 
 #### Fertility Rites
-+25% (from +10%) Growth Rate in Settlements (from cities only) with an Altar.
+:arrow_up: +25% (from +10%) Growth Rate in Settlements (from cities only) with an Altar.
 
 #### Goddess of Festivals
-+2 (from +1) Culture :musical_note: on Quarters in Settlements with an Altar.
+:arrow_up: +2 (from +1) Culture :musical_note: on Quarters in Settlements with an Altar.
 
 #### God of Wisdom
-+2 (from +1) Science :alembic: on Quarters in Settlements with an Altar.
+:arrow_up: +2 (from +1) Science :alembic: on Quarters in Settlements with an Altar.
 
 #### God of the Forge
-+40% (from +10%) Production :hammer: towards constructing Buildings in Cities with an Altar.
+:arrow_up: +40% (from +10%) Production :hammer: towards constructing Buildings in Cities with an Altar.
 
 #### God of War
-+40% (from +15%) Production :hammer: towards training Military Units in Cities with an Altar.
+:arrow_up: +40% (from +15%) Production :hammer: towards training Military Units in Cities with an Altar.
 
 #### Monuments of the Gods
-+30% (from +10%) Production :hammer: towards constructing Wonders in Cities with an Altar.
+:arrow_up: +30% (from +10%) Production :hammer: towards constructing Wonders in Cities with an Altar.
 
 #### Oral Tradition
-+50% (from +10%) Production :hammer: towards training Settlers in Cities with an Altar.
+:arrow_up: +50% (from +10%) Production :hammer: towards training Settlers in Cities with an Altar.
 
 #### Sacred Waters
-The Altar receives a +2 Gold :coin: Adjacency (from +1  Happiness :slightly_smiling_face:) for Coast, Lakes, and Navigable River tiles.
+:arrows_clockwise: The Altar receives a +2 Gold :coin: Adjacency (from +1  Happiness :slightly_smiling_face:) for Coast, Lakes, and Navigable River tiles.
 
 #### God of the Forest
-+2 (from +1) Gold :coin: on Camps and Woodcutters in Settlements with an Altar. Warehouse bonus.
+:arrow_up: +2 (from +1) Gold :coin: on Camps and Woodcutters in Settlements with an Altar. Warehouse bonus.
 
 ## Legacy Paths
 #### Cultural legacy path
-House 6 (from 7) World Wonders in your empire. 
+:arrows_clockwise: House 6 (from 7) World Wonders in your empire. 
 
 ## Independent people
 #### Cultural suizerain bonus
-- +1 (from +2) Culture :musical_note: to Monuments for every City-State you are Suzerain of.
-- +2 (from +1) Social Policy slot.
+- :small_red_triangle_down: +1 (from +2) Culture :musical_note: to Monuments for every City-State you are Suzerain of.
+- :arrow_up: +2 (from +1) Social Policy slot.
 
 #### Economic suizerain bonus
-- Lapis Lazuli provides +6 Gold :coin: (from +4 prod) and +25% (from +5%) Gold :coin: in capital.
-- Gold :coin: buildings receive +2 (from +1) Gold :coin: for every City-State you are Suzerain of.
+- :arrow_up: Lapis Lazuli provides +6 Gold :coin: (from +4 prod) and +25% (from +5%) Gold :coin: in capital.
+- :arrow_up: Gold :coin: buildings receive +2 (from +1) Gold :coin: for every City-State you are Suzerain of.
 
 ## Spawn biases
-- Egypt buffed navigable river bias from 20 to 200
-- Egypt buffed desert bias from 5 to 20
+- :arrows_clockwise: Egypt buffed navigable river bias from 20 to 200
+- :arrows_clockwise: Egypt buffed desert bias from 5 to 20
 
 ## Civilizations
 #### Egypt
-- Necropolis UQ: Grants 200 (from 100) Gold :coin: (on Standard Speed) when any Wonder is completed in this City.
+- :arrow_up: Necropolis UQ: Grants 200 (from 100) Gold :coin: (on Standard Speed) when any Wonder is completed in this City.
 
 # Exploration Age
 ## Religions
 #### Icons
-+1 (from +2) Relic for first-time conversion of a City-State
+:small_red_triangle_down: +1 (from +2) Relic for first-time conversion of a City-State
 
 #### Brahmanism
-+3 Relics for first-time conversion of another Civilization’s Capital city
+:arrow_up: +3 Relics (from +2) for first-time conversion of another Civilization’s Capital city
 
 #### Reliquaries
-+2 (from +1) Relic for first-time conversion of another Civilization’s settlement with a Temple or Altar
+:arrow_up: +2 (from +1) Relic for first-time conversion of another Civilization’s settlement with a Temple or Altar
 
 #### Lay Followers
-+2 (from +1) Relic for the first time conversion of another Civilization’s settlement with at least 10 Rural Population
+:arrow_up: +2 (from +1) Relic for the first time conversion of another Civilization’s settlement with at least 10 Rural Population
 
 #### Ecclesiasticism
-+2 (from +1) Relic for the first time conversion of another Civilization’s settlement with at least 10 Urban Population
+:arrow_up: +2 (from +1) Relic for the first time conversion of another Civilization’s settlement with at least 10 Urban Population
 
 #### Reincarnation
-+0.5 (from +2) Science :alembic: for every Tropical tile in other Civilizations’ Settlements following your Religion.
+:small_red_triangle_down: +0.5 (from +2) Science :alembic: for every Tropical tile in other Civilizations’ Settlements following your Religion.
 
 #### Shamanism
-+0.5 (from +2) Culture :musical_note: for every Tundra tile in other Civilizations’ Settlements following your Religion.
+:small_red_triangle_down: +0.5 (from +2) Culture :musical_note: for every Tundra tile in other Civilizations’ Settlements following your Religion.
 
 #### Desert Faith
-+1 (from +2) Gold :coin: for every Desert tile in other Civilizations’ Settlements following your Religion.
+:small_red_triangle_down: +1 (from +2) Gold :coin: for every Desert tile in other Civilizations’ Settlements following your Religion.
 
 #### Sacred Herds
-+0.5 (from +2) Science :alembic: for every Grassland tile in other Civilizations’ Settlements following your Religion.
+:small_red_triangle_down: +0.5 (from +2) Science :alembic: for every Grassland tile in other Civilizations’ Settlements following your Religion.
 
 #### Sky Gods
-+0.5 (from +2) Culture :musical_note: for every Plains tile in other Civilizations’ Settlements following your Religion.
+:small_red_triangle_down: +0.5 (from +2) Culture :musical_note: for every Plains tile in other Civilizations’ Settlements following your Religion.
