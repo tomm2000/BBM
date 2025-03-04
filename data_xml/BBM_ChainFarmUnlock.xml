@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<Kinds>
+		<InsertOrIgnore Kind="KIND_MODIFIER"/>
+	</Kinds>
+  <Types>
+		<Row Type="BBM_MOD_FARM_CHAIN_FOOD_ADJACENCY_TYPE" Kind="KIND_MODIFIER"/>
+	</Types>
+  <DynamicModifiers>
+    <Row
+      ModifierType="BBM_MOD_FARM_CHAIN_FOOD_ADJACENCY_TYPE"
+      CollectionType="COLLECTION_PLAYER_CITIES"
+      EffectType="EFFECT_CITY_ACTIVATE_CONSTRUCTIBLE_ADJACENCY"
+    />
+  </DynamicModifiers>
+  <Modifiers>
+    <Row
+      ModifierId="BBM_MOD_FARM_CHAIN_FOOD_ADJACENCY"
+      ModifierType="BBM_MOD_FARM_CHAIN_FOOD_ADJACENCY_TYPE"
+    />
+  </Modifiers>
+  <ModifierArguments>
+    <Row
+      ModifierId="BBM_MOD_FARM_CHAIN_FOOD_ADJACENCY"
+      Name="ConstructibleAdjacency"
+      Value="BBM_FarmChainFoodAdjacency"
+    />
+  </ModifierArguments>
+  <ModifierStrings>
+    <Row
+      Context="Description"
+      ModifierId="BBM_MOD_FARM_CHAIN_FOOD_ADJACENCY"
+      Text="BBM_LOC_MOD_FARM_CHAIN_FOOD_ADJACENCY_DESCRIPTION"
+    />
+  </ModifierStrings>
+  <ProgressionTreeNodeUnlocks>
+    <Row
+      ProgressionTreeNodeType="NODE_TECH_AQ_IRRIGATION"
+      TargetType="BBM_MOD_FARM_CHAIN_FOOD_ADJACENCY"
+      TargetKind="KIND_MODIFIER"
+      UnlockDepth="1"
+    />
+  </ProgressionTreeNodeUnlocks>
+</Database>

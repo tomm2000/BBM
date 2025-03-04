@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Row Tag="BBM_LOC_MOD_FARM_CHAIN_FOOD_ADJACENCY_DESCRIPTION">
+			<Text>Farms gain +1 [icon:YIELD_FOOD] Food for each other adjacent Farm.</Text>
+		</Row>
+	</EnglishText>
+</Database>

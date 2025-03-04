@@ -48,9 +48,11 @@
       <Actions>
         <UpdateText>
           <Item>localization/BBM_Antiquity_LOC.sql</Item>
+          <Item>localization_xml/BBM_ChainFarmUnlock_LOC.xml</Item>
         </UpdateText>
         <UpdateDatabase>
           <Item>data/BBM_Antiquity.sql</Item>
+          <Item>data_xml/BBM_ChainFarmUnlock.xml</Item>
         </UpdateDatabase>
       </Actions>
     </ActionGroup>
