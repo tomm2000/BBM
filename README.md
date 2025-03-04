@@ -15,7 +15,7 @@
 - New: Farms get +1 Production :hammer: for adjacent granaries
 
 #### Fishing Quay & Fishing boat
-- New: Fishing quay +1 gold on fishing boats. warehouse bonus.
+- New: Fishing quay +1 Gold :coin: on fishing boats. warehouse bonus.
 
 
 # Antiquity Age
@@ -45,10 +45,10 @@ The Altar receives a +2 (from +1)  Happiness :slightly_smiling_face: Adjacency f
 +50% (from +10%) Production :hammer: towards training Settlers in Cities with an Altar.
 
 #### Sacred Waters
-The Altar receives a +2 Gold Adjacency (from +1  Happiness :slightly_smiling_face:) for Coast, Lakes, and Navigable River tiles.
+The Altar receives a +2 Gold :coin: Adjacency (from +1  Happiness :slightly_smiling_face:) for Coast, Lakes, and Navigable River tiles.
 
 #### God of the Forest
-+2 (from +1) Gold on Camps and Woodcutters in Settlements with an Altar. Warehouse bonus.
++2 (from +1) Gold :coin: on Camps and Woodcutters in Settlements with an Altar. Warehouse bonus.
 
 ## Legacy Paths
 #### Culture :musical_note: legacy path
@@ -60,8 +60,8 @@ House 6 (from 7) World Wonders in your empire.
 - +2 (from +1) Social Policy slot.
 
 #### Economic suizerain bonus
-- Lapis Lazuli provides +6 Gold (from +4 prod) and +25% (from +5%) Gold in capital.
-- Gold buildings receive +2 (from +1) Gold for every City-State you are Suzerain of.
+- Lapis Lazuli provides +6 Gold :coin: (from +4 prod) and +25% (from +5%) Gold :coin: in capital.
+- Gold :coin: buildings receive +2 (from +1) Gold :coin: for every City-State you are Suzerain of.
 
 ## Spawn biases
 - Egypt buffed navigable river bias from 20 to 200
@@ -92,7 +92,7 @@ House 6 (from 7) World Wonders in your empire.
 +0.5 (from +2) Culture :musical_note: for every Tundra tile in other Civilizations’ Settlements following your Religion.
 
 #### Desert Faith
-+1 (from +2) Gold for every Desert tile in other Civilizations’ Settlements following your Religion.
++1 (from +2) Gold :coin: for every Desert tile in other Civilizations’ Settlements following your Religion.
 
 #### Sacred Herds
 +0.5 (from +2) Science :alembic: for every Grassland tile in other Civilizations’ Settlements following your Religion.
