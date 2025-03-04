@@ -1,4 +1,5 @@
-Balance mod for civilization 7
+<center><h1>BBM - Balanced by monkeys</h1></center>
+<center><h3>A balance mod for Civilization 7</h3></center>
 
 # Persistent changes
 ## Natural wonders
