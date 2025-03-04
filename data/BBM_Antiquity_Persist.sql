@@ -8,7 +8,7 @@ WHERE Feature_CityYieldType = 'ULURU_DESERT_CULTURE';
 
 -- ZHANGJIAJIE: from +2 culture on rough terrain tiles to +2 happiness on rough terrain tiles
 UPDATE Feature_CityYields
-SET YieldType = 'YIELD_HAPPINESS',
+SET YieldType = 'YIELD_HAPPINESS'
 WHERE Feature_CityYieldType = 'ZHANGJIAJIE_ROUGH_CULTURE';
 --========================================================================================================================
 --========================================================================================================================
@@ -76,7 +76,6 @@ SET Value = 200
 WHERE ModifierId = 'MOD_EGYPT_NECROPOLIS_GOLD_ON_WONDER_CREATED' AND Name = 'Amount';
 --========================================================================================================================
 --========================================================================================================================
-
 
 
 --========================================================================================================================
