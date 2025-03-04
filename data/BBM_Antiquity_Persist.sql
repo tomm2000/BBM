@@ -73,6 +73,27 @@ VALUES ('BBM_FishingQuayBoatGold', NULL, NULL, 'IMPROVEMENT_FISHING_BOAT', NULL,
 -- Necropolis unique quarter: 200 (from 100) gold (on standard speed) when a wonder is built in the city
 UPDATE ModifierArguments
 SET Value = 200
-WHERE ModifierId = 'MOD_EGYPT_NECROPOLIS_GOLD_ON_WONDER_CREATED' AND Name = 'Amount'
+WHERE ModifierId = 'MOD_EGYPT_NECROPOLIS_GOLD_ON_WONDER_CREATED' AND Name = 'Amount';
+--========================================================================================================================
+--========================================================================================================================
+
+
+
+--========================================================================================================================
+-- Maya changes
+--========================================================================================================================
+-- Uwaybil K'uh unique quarter: 10% production (from 15%) on tech completed
+UPDATE ModifierArguments
+SET Value = 10
+WHERE ModifierId = 'MOD_MAYA_UWAYBIL_KUH_PRODUCTION_ON_TECH_COMPLETED' AND Name = 'PercentCost';
+
+-- increased gold maintenance for Uwaybil K'uh and K'uh Nah buildings (10 gold instead of 2)
+UPDATE ConstructibleMaintenances
+SET Amount = 10
+WHERE ConstructibleType = 'BUILDING_JALAW' AND YieldType = 'YIELD_GOLD';
+
+UPDATE ConstructibleMaintenances
+SET Amount = 10
+WHERE ConstructibleType = 'BUILDING_KUH_NAH' AND YieldType = 'YIELD_GOLD'
 --========================================================================================================================
 --========================================================================================================================

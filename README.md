@@ -71,6 +71,11 @@
 #### Egypt
 - :arrow_up: Necropolis UQ: Grants 200 (from 100) :coin: Gold (on Standard Speed) when any Wonder is completed in this City.
 
+#### Maya
+- :small_red_triangle_down: Heavily increased maintenance on both unique buildings (10 gold, from 2)
+- :small_red_triangle_down: UQ, Every time you research a Technology, this Settlement gains :hammer: Production equal to 10% (from 15%) of its cost.
+
+
 # Exploration Age
 ## Religions
 #### Icons
