@@ -88,11 +88,11 @@ SET Value = 10
 WHERE ModifierId = 'MOD_MAYA_UWAYBIL_KUH_PRODUCTION_ON_TECH_COMPLETED' AND Name = 'PercentCost';
 
 -- increased gold maintenance for Uwaybil K'uh and K'uh Nah buildings (10 gold instead of 2)
-UPDATE ConstructibleMaintenances
+UPDATE Constructible_Maintenances
 SET Amount = 10
 WHERE ConstructibleType = 'BUILDING_JALAW' AND YieldType = 'YIELD_GOLD';
 
-UPDATE ConstructibleMaintenances
+UPDATE Constructible_Maintenances
 SET Amount = 10
 WHERE ConstructibleType = 'BUILDING_KUH_NAH' AND YieldType = 'YIELD_GOLD'
 --========================================================================================================================
