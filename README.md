@@ -4,15 +4,15 @@
 # Persistent changes
 ## Natural wonders
 #### Uluru
-+6 Happiness per Age. +1 (from +2) Culture on Desert Terrain in this Settlement
++6  Happiness :slightly_smiling_face: per Age. +1 (from +2) Culture :musical_note: on Desert Terrain in this Settlement
 
 #### Zhangjiajie 
-+2 Happiness and +4 Production per Age. +2 Happiness (from +2 culture) on Rough Terrain in this Settlement.
++2  Happiness :slightly_smiling_face: and +4 Production :hammer: per Age. +2  Happiness :slightly_smiling_face: (from +2 Culture :musical_note:) on Rough Terrain in this Settlement.
 
-## Food improvements balance
+## Food :corn: improvements balance
 #### Farms & Granary
-- New: Farm gets 1 food adjacency for every adjacent farm
-- New: Farms get +1 production for adjacent granaries
+- New: Farm gets 1 Food :corn: adjacency for every adjacent farm
+- New: Farms get +1 Production :hammer: for adjacent granaries
 
 #### Fishing Quay & Fishing boat
 - New: Fishing quay +1 gold on fishing boats. warehouse bonus.
@@ -21,42 +21,42 @@
 # Antiquity Age
 ## Pantheons
 #### Earth goddess
-The Altar receives a +2 (from +1) Happiness Adjacency for Mountains and Natural Wonders.
+The Altar receives a +2 (from +1)  Happiness :slightly_smiling_face: Adjacency for Mountains and Natural Wonders.
 
 #### Fertility Rites
 +25% (from +10%) Growth Rate in Settlements (from cities only) with an Altar.
 
 #### Goddess of Festivals
-+2 (from +1) Culture on Quarters in Settlements with an Altar.
++2 (from +1) Culture :musical_note: on Quarters in Settlements with an Altar.
 
 #### God of Wisdom
-+2 (from +1) Science on Quarters in Settlements with an Altar.
++2 (from +1) Science :alembic: on Quarters in Settlements with an Altar.
 
 #### God of the Forge
-+40% (from +10%) Production towards constructing Buildings in Cities with an Altar.
++40% (from +10%) Production :hammer: towards constructing Buildings in Cities with an Altar.
 
 #### God of War
-+40% (from +15%) Production towards training Military Units in Cities with an Altar.
++40% (from +15%) Production :hammer: towards training Military Units in Cities with an Altar.
 
 #### Monuments of the Gods
-+30% (from +10%) Production towards constructing Wonders in Cities with an Altar.
++30% (from +10%) Production :hammer: towards constructing Wonders in Cities with an Altar.
 
 #### Oral Tradition
-+50% (from +10%) Production towards training Settlers in Cities with an Altar.
++50% (from +10%) Production :hammer: towards training Settlers in Cities with an Altar.
 
 #### Sacred Waters
-The Altar receives a +2 Gold Adjacency (from +1 happiness) for Coast, Lakes, and Navigable River tiles.
+The Altar receives a +2 Gold Adjacency (from +1  Happiness :slightly_smiling_face:) for Coast, Lakes, and Navigable River tiles.
 
 #### God of the Forest
 +2 (from +1) Gold on Camps and Woodcutters in Settlements with an Altar. Warehouse bonus.
 
 ## Legacy Paths
-#### Culture legacy path
+#### Culture :musical_note: legacy path
 House 6 (from 7) World Wonders in your empire. 
 
 ## Independent people
-#### Culture suizerain bonus
-- +1 (from +2) Culture to Monuments for every City-State you are Suzerain of.
+#### Culture :musical_note: suizerain bonus
+- +1 (from +2) Culture :musical_note: to Monuments for every City-State you are Suzerain of.
 - +2 (from +1) Social Policy slot.
 
 #### Economic suizerain bonus
@@ -86,16 +86,16 @@ House 6 (from 7) World Wonders in your empire.
 +2 (from +1) Relic for the first time conversion of another Civilization’s settlement with at least 10 Urban Population
 
 #### Reincarnation
-+0.5 (from +2) Science for every Tropical tile in other Civilizations’ Settlements following your Religion.
++0.5 (from +2) Science :alembic: for every Tropical tile in other Civilizations’ Settlements following your Religion.
 
 #### Shamanism
-+0.5 (from +2) Culture for every Tundra tile in other Civilizations’ Settlements following your Religion.
++0.5 (from +2) Culture :musical_note: for every Tundra tile in other Civilizations’ Settlements following your Religion.
 
 #### Desert Faith
 +1 (from +2) Gold for every Desert tile in other Civilizations’ Settlements following your Religion.
 
 #### Sacred Herds
-+0.5 (from +2) Science for every Grassland tile in other Civilizations’ Settlements following your Religion.
++0.5 (from +2) Science :alembic: for every Grassland tile in other Civilizations’ Settlements following your Religion.
 
 #### Sky Gods
-+0.5 (from +2) Culture for every Plains tile in other Civilizations’ Settlements following your Religion.
++0.5 (from +2) Culture :musical_note: for every Plains tile in other Civilizations’ Settlements following your Religion.
