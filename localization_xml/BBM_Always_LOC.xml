@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Row Tag="BBM_LOC_RULESET_FUNKY_NAME">
+			<Text>BBM Funky Rules</Text>
+		</Row>
+    <Row Tag="BBM_LOC_RULESET_FUNKY_DESCRIPTION">
+      <Text>BBM Ruleset to try out funky mechanics.</Text>
+    </Row>
+		<Row Tag="BBM_LOC_RULESET_BETA_NAME">
+			<Text>BBM Beta Rules</Text>
+		</Row>
+    <Row Tag="BBM_LOC_RULESET_BETA_DESCRIPTION">
+      <Text>BBM Ruleset to test new changes.</Text>
+    </Row>
+	</EnglishText>
+</Database>

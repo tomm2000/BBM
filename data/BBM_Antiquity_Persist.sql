@@ -88,6 +88,8 @@ WHERE ConstructibleType = 'BUILDING_JALAW';
 
 UPDATE Buildings
 SET MaxPlayerInstances = 1
-WHERE ConstructibleType = 'BUILDING_KUH_NAH'
+WHERE ConstructibleType = 'BUILDING_KUH_NAH';
 --========================================================================================================================
 --========================================================================================================================
+
+
