@@ -12,9 +12,20 @@ WHERE YieldChange = 1
 -- FROM "Constructible_ValidDistricts"
 -- WHERE "DistrictType" = 'DISTRICT_RURAL';
 
--- INSERT INTO 'Adjacency_YieldChanges' ('ID','AdjacentBiome','AdjacentConstructible','AdjacentConstructibleTag','AdjacentDistrict','AdjacentFeature','AdjacentFeatureClass','AdjacentLake','AdjacentNaturalWonder','AdjacentNavigableRiver','AdjacentQuarter','AdjacentResource','AdjacentResourceClass','AdjacentRiver','AdjacentSeaResource','AdjacentTerrain','AdjacentUniqueQuarter','AdjacentUniqueQuarterType','Age','ProjectMaxYield','Self','TilesRequired','YieldChange','YieldType')
--- VALUES ('BBM_RuralBathAdjacency',NULL,'BUILDING_BATH',NULL,NULL,NULL,NULL,0,0,0,0,0,'NO_RESOURCECLASS',0,0,NULL,0,NULL,NULL,1,0,1,1.0,'YIELD_CULTURE');
+-- DELETE if exists
+DELETE FROM Constructible_Adjacencies
+WHERE YieldChangeId = 'BBM_RuralBathAdjacency';
 
+INSERT INTO 'Adjacency_YieldChanges' ('ID','AdjacentBiome','AdjacentConstructible','AdjacentConstructibleTag','AdjacentDistrict','AdjacentFeature','AdjacentFeatureClass','AdjacentLake','AdjacentNaturalWonder','AdjacentNavigableRiver','AdjacentQuarter','AdjacentResource','AdjacentResourceClass','AdjacentRiver','AdjacentSeaResource','AdjacentTerrain','AdjacentUniqueQuarter','AdjacentUniqueQuarterType','Age','ProjectMaxYield','Self','TilesRequired','YieldChange','YieldType')
+VALUES ('BBM_RuralBathAdjacency',NULL,'BUILDING_BATH',NULL,NULL,NULL,NULL,0,0,0,0,0,'NO_RESOURCECLASS',0,0,NULL,0,NULL,NULL,1,0,1,1.0,'YIELD_CULTURE');
+
+INSERT INTO "Constructible_Adjacencies" ("ConstructibleType", "YieldChangeId")
+VALUES
+('IMPROVEMENT_FARM', 'BBM_RuralBathAdjacency');
+
+INSERT INTO "Constructible_Adjacencies" ("ConstructibleType", "YieldChangeId")
+VALUES
+('IMPROVEMENT_WOODCUTTER', 'BBM_RuralBathAdjacency');
 
 
 -- INSERT INTO "Constructible_Adjacencies" ("ConstructibleType", "YieldChangeId")
@@ -22,6 +33,12 @@ WHERE YieldChange = 1
 -- FROM "Constructible_ValidDistricts"
 -- WHERE "DistrictType" = 'DISTRICT_RURAL';
 
+-- DELETE if exists
+DELETE FROM Constructible_Adjacencies
+WHERE YieldChangeId = 'BBM_RuralGardenAdjacency';
+
+INSERT INTO 'Adjacency_YieldChanges' ('ID','AdjacentBiome','AdjacentConstructible','AdjacentConstructibleTag','AdjacentDistrict','AdjacentFeature','AdjacentFeatureClass','AdjacentLake','AdjacentNaturalWonder','AdjacentNavigableRiver','AdjacentQuarter','AdjacentResource','AdjacentResourceClass','AdjacentRiver','AdjacentSeaResource','AdjacentTerrain','AdjacentUniqueQuarter','AdjacentUniqueQuarterType','Age','ProjectMaxYield','Self','TilesRequired','YieldChange','YieldType')
+VALUES ('BBM_RuralGardenAdjacency',NULL,'BUILDING_BATH',NULL,NULL,NULL,NULL,0,0,0,0,0,'NO_RESOURCECLASS',0,0,NULL,0,NULL,NULL,1,0,1,2.0,'YIELD_FOOD');
 
 INSERT INTO "Constructible_Adjacencies" ("ConstructibleType", "YieldChangeId")
 VALUES
@@ -31,5 +48,3 @@ INSERT INTO "Constructible_Adjacencies" ("ConstructibleType", "YieldChangeId")
 VALUES
 ('IMPROVEMENT_WOODCUTTER', 'BBM_RuralGardenAdjacency');
 
-INSERT INTO 'Adjacency_YieldChanges' ('ID','AdjacentBiome','AdjacentConstructible','AdjacentConstructibleTag','AdjacentDistrict','AdjacentFeature','AdjacentFeatureClass','AdjacentLake','AdjacentNaturalWonder','AdjacentNavigableRiver','AdjacentQuarter','AdjacentResource','AdjacentResourceClass','AdjacentRiver','AdjacentSeaResource','AdjacentTerrain','AdjacentUniqueQuarter','AdjacentUniqueQuarterType','Age','ProjectMaxYield','Self','TilesRequired','YieldChange','YieldType')
-VALUES ('BBM_RuralGardenAdjacency',NULL,'BUILDING_BATH',NULL,NULL,NULL,NULL,0,0,0,0,0,'NO_RESOURCECLASS',0,0,NULL,0,NULL,NULL,1,0,1,2.0,'YIELD_FOOD');
