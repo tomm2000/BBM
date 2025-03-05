@@ -44,31 +44,19 @@
 
 	<ActionGroups>
 <!-- Always changes : 0 -->
-    <ActionGroup id="bbm-always-changes" scope="shell" criteria="always">
+    <ActionGroup id="bbm-shell-changes" scope="shell" criteria="always">
       <Actions>
         <UpdateText>
-          <Item>localization/BBM_Always_LOC.sql</Item>
-          <Item>localization_xml/BBM_Always_LOC.xml</Item>
+          <Item>localization/BBM_Shell_LOC.sql</Item>
+          <Item>localization_xml/BBM_Shell_LOC.xml</Item>
         </UpdateText>
         <UpdateDatabase>
-          <Item>data/BBM_Always.sql</Item>
+          <Item>data/BBM_Shell.sql</Item>
         </UpdateDatabase>
       </Actions>
       <Properties>
         <LoadOrder>0</LoadOrder>
       </Properties>
-    </ActionGroup>
-
-<!-- Beta changes : 1 -->
-    <ActionGroup id="bbm-beta-changes" scope="game" criteria="beta">
-      <Actions>
-        <UpdateDatabase>
-          <Item>beta_data/BBM_Beta.sql</Item>
-        </UpdateDatabase>
-        <UpdateText>
-          <Item>beta_data/BBM_Beta_LOC.sql</Item>
-        </UpdateText>
-      </Actions>
     </ActionGroup>
     
 <!-- Antiquity age changes : 10 -->
@@ -87,6 +75,7 @@
         </UpdateDatabase>
       </Actions>
     </ActionGroup>
+
 <!-- Antiquity age persistent changes : 11 -->
     <ActionGroup id="bbm-antiquity-age-persistent-changes" scope="game" criteria="antiquity-age-persist">
       <Properties>
@@ -116,6 +105,7 @@
         </UpdateDatabase>
       </Actions>
     </ActionGroup>
+    
 <!-- Exploration age persistent changes : 13 -->
     <ActionGroup id="bbm-exploration-age-persistent-changes" scope="game" criteria="exploration-age-persist">
       <Properties>
@@ -145,10 +135,11 @@
         </UpdateDatabase>
       </Actions>
     </ActionGroup>
+
 <!-- Modern age persistent changes : 15 -->
     <ActionGroup id="bbm-modern-age-persistent-changes" scope="game" criteria="modern-age-persist">
       <Properties>
-        <LoadOrder>13</LoadOrder>
+        <LoadOrder>14</LoadOrder>
       </Properties>
       <Actions>
         <UpdateText>
@@ -157,6 +148,35 @@
         <UpdateDatabase>
           <Item>data/BBM_Modern_Persist.sql</Item>
         </UpdateDatabase>
+      </Actions>
+    </ActionGroup>
+
+    <ActionGroup id="bbm-leader-changes" scope="game" criteria="always">
+      <Properties>
+        <LoadOrder>15</LoadOrder>
+      </Properties>
+      <Actions>
+        <UpdateText>
+          <Item>localization/BBM_Leaders_LOC.sql</Item>
+        </UpdateText>
+        <UpdateDatabase>
+          <Item>data/BBM_Leaders.sql</Item>
+        </UpdateDatabase>
+      </Actions>
+      </ActionGroup>
+
+    <!-- Beta changes : 1 -->
+    <ActionGroup id="bbm-beta-changes" scope="game" criteria="beta">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <Actions>
+        <UpdateDatabase>
+          <Item>beta_data/BBM_Beta.sql</Item>
+        </UpdateDatabase>
+        <UpdateText>
+          <Item>beta_data/BBM_Beta_LOC.sql</Item>
+        </UpdateText>
       </Actions>
     </ActionGroup>
 	</ActionGroups>

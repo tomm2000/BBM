@@ -21,6 +21,10 @@
 #### Grassland
 :arrow_up: most grassland tiles get 2 :corn: Food (from 1) base yield
 
+## Leader balance
+#### Ada Lovelace
+- Cities receive +1 (from +2) :alembic: Science per Age when you complete a Civic Mastery.
+
 # Antiquity Age
 ## Pantheons
 #### Earth goddess

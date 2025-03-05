@@ -1,28 +1,4 @@
 --========================================================================================================================
--- Natural wonders
---========================================================================================================================
-
--- Uluru: from +2 culture on desert tiles to +1 culture on desert tiles
-UPDATE LocalizedText
-SET Text = 'BBM : +6[icon:YIELD_HAPPINESS] Happiness per Age. +1[icon:YIELD_CULTURE] Culture on Desert Terrain in this Settlement.'
-WHERE Tag = 'LOC_FEATURE_ULURU_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = 'BBM : +1[icon:YIELD_CULTURE] Culture on Desert Terrain in this Settlement.'
-WHERE Tag = 'LOC_FEATURE_ULURU_TOOLTIP';
-
--- ZHANGJIAJIE: from +2 culture on rough terrain tiles to +1 culture on rough terrain tiles
-UPDATE LocalizedText
-SET Text = 'BBM : +2[icon:YIELD_HAPPINESS] Happiness and +4[icon:YIELD_PRODUCTION] Production per Age. +2[icon:YIELD_HAPPINESS] Culture on Rough Terrain in this Settlement.'
-WHERE Tag = 'LOC_FEATURE_ZHANGJIAJIE_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = 'BBM : +2[icon:YIELD_HAPPINESS] Culture on Rough Terrain in this Settlement.'
-WHERE Tag = 'LOC_FEATURE_ZHANGJIAJIE_TOOLTIP';
---========================================================================================================================
---========================================================================================================================
-
---========================================================================================================================
 -- Egypt Changes
 --========================================================================================================================
 -- Necropolis unique quarter: 200 (from 100) gold (on standard speed) when a wonder is built in the city
@@ -55,6 +31,20 @@ WHERE Tag = 'LOC_BUILDING_JALAW_DESCRIPTION';
 
 UPDATE LocalizedText
 SET Text = 'BBM : +4[icon:YIELD_SCIENCE] Science. +2[icon:YIELD_SCIENCE] Science if placed on Vegetation. +1[icon:YIELD_SCIENCE] Science Adjacency for Wonders. Can only be built once per empire. Mayan Unique Science Building. Ageless.'
-WHERE Tag = 'LOC_BUILDING_KUH_NAH_DESCRIPTION'
+WHERE Tag = 'LOC_BUILDING_KUH_NAH_DESCRIPTION';
+--========================================================================================================================
+--========================================================================================================================
+
+--========================================================================================================================
+-- Ada Lovelace
+--========================================================================================================================
+-- cities receive +1 (from +1) science when you complete a civic mastery
+UPDATE LocalizedText
+SET Text = 'BBM : Cities receive +1 [icon:YIELD_SCIENCE] Science per Age when you complete a Civic Mastery. This resets at the start of each age. Gain [icon:YIELD_CULTURE] Culture equal to 50% of your total [icon:YIELD_SCIENCE] Science per turn when you complete a Technology Mastery.'
+WHERE Tag = 'LOC_LEADER_ADA_LOVELACE_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '[LIST][LI]BBM : Cities receive +1[icon:YIELD_SCIENCE] Science per Age when you complete a Civic Mastery. This resets at the start of each age. [LI]Gain [icon:YIELD_CULTURE] Culture equal to 50% of your total [icon:YIELD_SCIENCE] Science per turn when you complete a Technology Mastery.[/LIST]'
+WHERE Tag = 'LOC_TRAIT_LEADER_ADA_LOVELACE_ABILITY_DESCRIPTION';
 --========================================================================================================================
 --========================================================================================================================
