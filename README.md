@@ -63,25 +63,25 @@
 
 ## Independent people
 #### Cultural suizerain bonus
-:small_red_triangle_down: +1 (from +2) :musical_note: Culture to Monuments for every City-State you are Suzerain of.
-:arrow_up: +2 (from +1) Social Policy slot.
+:small_red_triangle_down: +1 (from +2) :musical_note: Culture to Monuments for every City-State you are Suzerain of. \
+:arrow_up: +2 (from +1) Social Policy slot. \
 
 #### Economic suizerain bonus
-:arrow_up: Lapis Lazuli provides +6 :coin: Gold (from +4 prod) and +25% (from +5%) :coin: Gold in capital.
-:arrow_up: :coin: Gold buildings receive +2 (from +1) :coin: Gold for every City-State you are Suzerain of.
+:arrow_up: Lapis Lazuli provides +6 :coin: Gold (from +4 prod) and +25% (from +5%) :coin: Gold in capital. \
+:arrow_up: :coin: Gold buildings receive +2 (from +1) :coin: Gold for every City-State you are Suzerain of. \
 
 ## Spawn biases
-:twisted_rightwards_arrows: Egypt buffed navigable river bias from 20 to 200
-:twisted_rightwards_arrows: Egypt buffed desert bias from 5 to 20
+:twisted_rightwards_arrows: Egypt buffed navigable river bias from 20 to 200 \
+:twisted_rightwards_arrows: Egypt buffed desert bias from 5 to 20 \
 
 ## Civilizations
 #### Egypt
 :arrow_up: Necropolis UQ: Grants 200 (from 100) :coin: Gold (on Standard Speed) when any Wonder is completed in this City.
 
 #### Maya
-:small_red_triangle_down: Unique buidings: max 1 per empire.
-:small_red_triangle_down: UQ, Every time you research a Technology, this Settlement gains :hammer: Production equal to 10% (from 15%) of its cost.
-:small_red_triangle_down: Civic tree bonus: The Altar gains a +1 :slightly_smiling_face: Happiness (from 1 :alembic: Science) Adjacency from Vegetated Terrain.
+:small_red_triangle_down: Unique buidings: max 1 per empire. \
+:small_red_triangle_down: UQ, Every time you research a Technology, this Settlement gains :hammer: Production equal to 10% (from 15%) of its cost. \
+:small_red_triangle_down: Civic tree bonus: The Altar gains a +1 :slightly_smiling_face: Happiness (from 1 :alembic: Science) Adjacency from Vegetated Terrain. \
 :small_red_triangle_down: Calendar round civic bonuses give 10% culture/science when researching a tech/civic <ins>mastery</ins> (instead of from all techs/civics)
 
 # Exploration Age
