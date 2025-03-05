@@ -7,15 +7,15 @@ VALUES ('BBM_RuralBathAdjacency',NULL,'BUILDING_BATH',NULL,NULL,NULL,NULL,0,0,0,
 
 INSERT INTO "Constructible_Adjacencies" ("ConstructibleType", "YieldChangeId")
 VALUES
-('IMPROVEMENT_FARM', 'BBM_RuralBathAdjacency')
-('IMPROVEMENT_PASTURE', 'BBM_RuralBathAdjacency')
-('IMPROVEMENT_PLANTATION', 'BBM_RuralBathAdjacency')
-('IMPROVEMENT_MINE', 'BBM_RuralBathAdjacency')
-('IMPROVEMENT_QUARRY', 'BBM_RuralBathAdjacency')
-('IMPROVEMENT_CLAY_PIT', 'BBM_RuralBathAdjacency')
-('IMPROVEMENT_WOODCUTTER', 'BBM_RuralBathAdjacency')
-('IMPROVEMENT_CAMP', 'BBM_RuralBathAdjacency')
-('IMPROVEMENT_FISHING_BOAT', 'BBM_RuralBathAdjacency')
+('IMPROVEMENT_FARM', 'BBM_RuralBathAdjacency'),
+('IMPROVEMENT_PASTURE', 'BBM_RuralBathAdjacency'),
+('IMPROVEMENT_PLANTATION', 'BBM_RuralBathAdjacency'),
+('IMPROVEMENT_MINE', 'BBM_RuralBathAdjacency'),
+('IMPROVEMENT_QUARRY', 'BBM_RuralBathAdjacency'),
+('IMPROVEMENT_CLAY_PIT', 'BBM_RuralBathAdjacency'),
+('IMPROVEMENT_WOODCUTTER', 'BBM_RuralBathAdjacency'),
+('IMPROVEMENT_CAMP', 'BBM_RuralBathAdjacency'),
+('IMPROVEMENT_FISHING_BOAT', 'BBM_RuralBathAdjacency'),
 ('IMPROVEMENT_OIL_RIG', 'BBM_RuralBathAdjacency');
 
 -- Rural districts get +2 food from adjacent gardens
@@ -24,15 +24,15 @@ VALUES ('BBM_RuralGardenAdjacency',NULL,'BUILDING_GARDEN',NULL,NULL,NULL,NULL,0,
 
 INSERT INTO "Constructible_Adjacencies" ("ConstructibleType", "YieldChangeId")
 VALUES
-('IMPROVEMENT_FARM', 'BBM_RuralGardenAdjacency')
-('IMPROVEMENT_PASTURE', 'BBM_RuralGardenAdjacency')
-('IMPROVEMENT_PLANTATION', 'BBM_RuralGardenAdjacency')
-('IMPROVEMENT_MINE', 'BBM_RuralGardenAdjacency')
-('IMPROVEMENT_QUARRY', 'BBM_RuralGardenAdjacency')
-('IMPROVEMENT_CLAY_PIT', 'BBM_RuralGardenAdjacency')
-('IMPROVEMENT_WOODCUTTER', 'BBM_RuralGardenAdjacency')
-('IMPROVEMENT_CAMP', 'BBM_RuralGardenAdjacency')
-('IMPROVEMENT_FISHING_BOAT', 'BBM_RuralGardenAdjacency')
+('IMPROVEMENT_FARM', 'BBM_RuralGardenAdjacency'),
+('IMPROVEMENT_PASTURE', 'BBM_RuralGardenAdjacency'),
+('IMPROVEMENT_PLANTATION', 'BBM_RuralGardenAdjacency'),
+('IMPROVEMENT_MINE', 'BBM_RuralGardenAdjacency'),
+('IMPROVEMENT_QUARRY', 'BBM_RuralGardenAdjacency'),
+('IMPROVEMENT_CLAY_PIT', 'BBM_RuralGardenAdjacency'),
+('IMPROVEMENT_WOODCUTTER', 'BBM_RuralGardenAdjacency'),
+('IMPROVEMENT_CAMP', 'BBM_RuralGardenAdjacency'),
+('IMPROVEMENT_FISHING_BOAT', 'BBM_RuralGardenAdjacency'),
 ('IMPROVEMENT_OIL_RIG', 'BBM_RuralGardenAdjacency');
 --========================================================================================================================
 --========================================================================================================================
