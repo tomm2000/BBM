@@ -13,8 +13,8 @@ WHERE YieldChange = 1
 -- WHERE "DistrictType" = 'DISTRICT_RURAL';
 
 -- DELETE if exists
-DELETE FROM Constructible_Adjacencies
-WHERE YieldChangeId = 'BBM_RuralBathAdjacency';
+DELETE FROM Adjacency_YieldChanges
+WHERE ID = 'BBM_RuralBathAdjacency';
 
 INSERT INTO 'Adjacency_YieldChanges' ('ID','AdjacentBiome','AdjacentConstructible','AdjacentConstructibleTag','AdjacentDistrict','AdjacentFeature','AdjacentFeatureClass','AdjacentLake','AdjacentNaturalWonder','AdjacentNavigableRiver','AdjacentQuarter','AdjacentResource','AdjacentResourceClass','AdjacentRiver','AdjacentSeaResource','AdjacentTerrain','AdjacentUniqueQuarter','AdjacentUniqueQuarterType','Age','ProjectMaxYield','Self','TilesRequired','YieldChange','YieldType')
 VALUES ('BBM_RuralBathAdjacency',NULL,'BUILDING_BATH',NULL,NULL,NULL,NULL,0,0,0,0,0,'NO_RESOURCECLASS',0,0,NULL,0,NULL,NULL,1,0,1,1.0,'YIELD_CULTURE');
@@ -34,8 +34,8 @@ VALUES
 -- WHERE "DistrictType" = 'DISTRICT_RURAL';
 
 -- DELETE if exists
-DELETE FROM Constructible_Adjacencies
-WHERE YieldChangeId = 'BBM_RuralGardenAdjacency';
+DELETE FROM Adjacency_YieldChanges
+WHERE ID = 'BBM_RuralGardenAdjacency';
 
 INSERT INTO 'Adjacency_YieldChanges' ('ID','AdjacentBiome','AdjacentConstructible','AdjacentConstructibleTag','AdjacentDistrict','AdjacentFeature','AdjacentFeatureClass','AdjacentLake','AdjacentNaturalWonder','AdjacentNavigableRiver','AdjacentQuarter','AdjacentResource','AdjacentResourceClass','AdjacentRiver','AdjacentSeaResource','AdjacentTerrain','AdjacentUniqueQuarter','AdjacentUniqueQuarterType','Age','ProjectMaxYield','Self','TilesRequired','YieldChange','YieldType')
 VALUES ('BBM_RuralGardenAdjacency',NULL,'BUILDING_BATH',NULL,NULL,NULL,NULL,0,0,0,0,0,'NO_RESOURCECLASS',0,0,NULL,0,NULL,NULL,1,0,1,2.0,'YIELD_FOOD');
