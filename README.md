@@ -68,15 +68,13 @@
 
 #### Economic suizerain bonus
 :arrow_up: Lapis Lazuli provides +6 :coin: Gold (from +4 prod) and +25% (from +5%) :coin: Gold in capital. \
-:arrow_up: :coin: Gold buildings receive +2 (from +1) :coin: Gold for every City-State you are Suzerain of. \
-
-## Spawn biases
-:twisted_rightwards_arrows: Egypt buffed navigable river bias from 20 to 200 \
-:twisted_rightwards_arrows: Egypt buffed desert bias from 5 to 20 \
+:arrow_up: :coin: Gold buildings receive +2 (from +1) :coin: Gold for every City-State you are Suzerain of.
 
 ## Civilizations
 #### Egypt
 :arrow_up: Necropolis UQ: Grants 200 (from 100) :coin: Gold (on Standard Speed) when any Wonder is completed in this City.
+:twisted_rightwards_arrows: Egypt buffed navigable river spawn bias from 20 to 200 \
+:twisted_rightwards_arrows: Egypt buffed desert spawn bias from 5 to 20
 
 #### Maya
 :small_red_triangle_down: Unique buidings: max 1 per empire. \

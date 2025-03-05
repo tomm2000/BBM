@@ -15,26 +15,6 @@ WHERE Feature_CityYieldType = 'ZHANGJIAJIE_ROUGH_CULTURE';
 
 
 --========================================================================================================================
--- Spawn biases
---========================================================================================================================
--- Egypt buffed navigable river bias from 20 to 200
-UPDATE StartBiasTerrains
-SET Score = 200
-WHERE CivilizationType = 'CIVILIZATION_EGYPT';
-
--- Egypt buffed desert bias from 5 to 20
-UPDATE StartBiasBiomes
-SET Score = 40
-WHERE CivilizationType = 'CIVILIZATION_EGYPT';
-
--- Missisipi removed flat terrain bias
-DELETE FROM StartBiasTerrains
-WHERE CivilizationType = 'CIVILIZATION_MISSISSIPPIAN' AND TerrainType = 'TERRAIN_FLAT';
---========================================================================================================================
---========================================================================================================================
-
-
---========================================================================================================================
 -- Farms & Granary
 --========================================================================================================================
 -- NOTE: The chain farm adjacency is unlockable in antiquity (BBM_Antiquity.sql) and default in other ages (BBM_Exploration_Persist.sql)
@@ -69,6 +49,16 @@ VALUES ('BBM_FishingQuayBoatGold', NULL, NULL, 'IMPROVEMENT_FISHING_BOAT', NULL,
 UPDATE ModifierArguments
 SET Value = 200
 WHERE ModifierId = 'MOD_EGYPT_NECROPOLIS_GOLD_ON_WONDER_CREATED' AND Name = 'Amount';
+
+-- Egypt buffed navigable river bias from 20 to 200
+UPDATE StartBiasTerrains
+SET Score = 200
+WHERE CivilizationType = 'CIVILIZATION_EGYPT';
+
+-- Egypt buffed desert bias from 5 to 20
+UPDATE StartBiasBiomes
+SET Score = 40
+WHERE CivilizationType = 'CIVILIZATION_EGYPT';
 --========================================================================================================================
 --========================================================================================================================
 
@@ -89,6 +79,44 @@ WHERE ConstructibleType = 'BUILDING_JALAW';
 UPDATE Buildings
 SET MaxPlayerInstances = 1
 WHERE ConstructibleType = 'BUILDING_KUH_NAH';
+--========================================================================================================================
+--========================================================================================================================
+
+
+--========================================================================================================================
+-- Khmer changes
+--========================================================================================================================
+
+--========================================================================================================================
+--========================================================================================================================
+
+
+--========================================================================================================================
+-- Missisipi changes
+--========================================================================================================================
+-- Removed flat terrain bias
+DELETE FROM StartBiasTerrains
+WHERE CivilizationType = 'CIVILIZATION_MISSISSIPPIAN' AND TerrainType = 'TERRAIN_FLAT';
+
+-- Potkop UI: no base gold
+DELETE FROM Constructible_YieldChanges
+WHERE ConstructibleType = 'IMPROVEMENT_POTKOP' AND YieldType = 'YIELD_GOLD';
+
+-- instead gets +2 food +2 gold from adjacent resources
+DELETE FROM Constructible_Adjacencies
+WHERE ConstructibleType = 'IMPROVEMENT_POTKOP';
+
+INSERT INTO Adjacency_YieldChanges ('ID', 'AdjacentResource', 'ProjectMaxYield', 'Self', 'TilesRequired', 'YieldChange', 'YieldType')
+VALUES ('BBM_PotkopResourceFood', 1, 1, 0, 1, 2.0, 'YIELD_FOOD');
+
+INSERT INTO Adjacency_YieldChanges ('ID', 'AdjacentResource', 'ProjectMaxYield', 'Self', 'TilesRequired', 'YieldChange', 'YieldType')
+VALUES ('BBM_PotkopResourceGold', 1, 1, 0, 1, 2.0, 'YIELD_GOLD');
+
+INSERT INTO Constructible_Adjacencies (ConstructibleType, YieldChangeId, RequiresActivation)
+VALUES ('IMPROVEMENT_POTKOP', 'BBM_PotkopResourceFood', 0);
+
+INSERT INTO Constructible_Adjacencies (ConstructibleType, YieldChangeId, RequiresActivation)
+VALUES ('IMPROVEMENT_POTKOP', 'BBM_PotkopResourceGold', 0);
 --========================================================================================================================
 --========================================================================================================================
 

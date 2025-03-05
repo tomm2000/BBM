@@ -72,6 +72,7 @@
         <UpdateDatabase>
           <Item>data/BBM_Antiquity.sql</Item>
           <Item>data_xml/BBM_ChainFarmUnlock.xml</Item>
+          <Item>data_xml/BBM_MissisipiFounderAbility.xml</Item>
         </UpdateDatabase>
       </Actions>
     </ActionGroup>

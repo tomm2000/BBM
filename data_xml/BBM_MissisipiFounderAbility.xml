@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<Kinds>
+		<InsertOrIgnore Kind="KIND_MODIFIER"/>
+	</Kinds>
+  <Types>
+    <Row Type="BBM_TRAIT_MOD_FOUNDER_IGNORE_TERRAIN_TYPE" Kind="KIND_MODIFIER"/>
+    <!-- <Row Type="BBM_TRAIT_MOD_FOUNDER_IGNORE_RIVER_TYPE" Kind="KIND_MODIFIER"/> -->
+    <Row Type="BBM_TRAIT_MOD_FOUNDER_VISION_TYPE" Kind="KIND_MODIFIER"/>
+    <Row Type="BBM_TRAIT_MOD_FOUNDER_SEE_THROUGH_FEATURES_TYPE" Kind="KIND_MODIFIER"/>
+	</Types>
+  <TraitModifiers>
+    <Row
+      ModifierID="BBM_TRAIT_MOD_FOUNDER_IGNORE_TERRAIN"
+      TraitType="TRAIT_MISSISSIPPIAN_ABILITY"
+    />
+    <Row
+      ModifierID="BBM_TRAIT_MOD_FOUNDER_VISION"
+      TraitType="TRAIT_MISSISSIPPIAN_ABILITY"
+    />
+    <Row
+      ModifierID="BBM_TRAIT_MOD_FOUNDER_SEE_THROUGH_FEATURES"
+      TraitType="TRAIT_MISSISSIPPIAN_ABILITY"
+    />
+  </TraitModifiers>
+  <DynamicModifiers>
+    <Row
+      ModifierType="BBM_TRAIT_MOD_FOUNDER_IGNORE_TERRAIN_TYPE"
+      CollectionType="COLLECTION_PLAYER_UNITS"
+      EffectType="EFFECT_UNIT_ADJUST_IGNORE_MOVEMENT_OBSTACLE"
+    />
+    <Row
+      ModifierType="BBM_TRAIT_MOD_FOUNDER_VISION_TYPE"
+      CollectionType="COLLECTION_PLAYER_UNITS"
+      EffectType="EFFECT_ADJUST_UNIT_SIGHT"
+    />
+    <Row
+      ModifierType="BBM_TRAIT_MOD_FOUNDER_SEE_THROUGH_FEATURES_TYPE"
+      CollectionType="COLLECTION_PLAYER_UNITS"
+      EffectType="EFFECT_ADJUST_UNIT_SEE_THROUGH_FEATURES"
+    />
+  </DynamicModifiers>
+  <Modifiers>
+    <Row
+      ModifierId="BBM_TRAIT_MOD_FOUNDER_IGNORE_TERRAIN"
+      ModifierType="BBM_TRAIT_MOD_FOUNDER_IGNORE_TERRAIN_TYPE"
+      SubjectRequirementSetId="BBM_UNIT_FOUNDER_REQUIREMENTS"
+    />
+    <Row
+      ModifierId="BBM_TRAIT_MOD_FOUNDER_VISION"
+      ModifierType="BBM_TRAIT_MOD_FOUNDER_VISION_TYPE"
+      SubjectRequirementSetId="BBM_UNIT_FOUNDER_REQUIREMENTS"
+    />
+    <Row
+      ModifierId="BBM_TRAIT_MOD_FOUNDER_SEE_THROUGH_FEATURES"
+      ModifierType="BBM_TRAIT_MOD_FOUNDER_SEE_THROUGH_FEATURES_TYPE"
+      SubjectRequirementSetId="BBM_UNIT_FOUNDER_REQUIREMENTS"
+    />
+  </Modifiers>
+  <ModifierArguments>
+    <Row
+      ModifierId="BBM_TRAIT_MOD_FOUNDER_VISION"
+      Name="Amount"
+      Value="3"
+    />
+    <Row
+      ModifierId="BBM_TRAIT_MOD_FOUNDER_IGNORE_TERRAIN"
+      Name="IgnoreAll"
+      Value="true"
+    />
+    <Row
+      ModifierId="BBM_TRAIT_MOD_FOUNDER_SEE_THROUGH_FEATURES"
+      Name="CanSee"
+      Value="true"
+    />
+  </ModifierArguments>
+
+  <RequirementSetRequirements>
+    <Row
+      RequirementSetId="BBM_UNIT_FOUNDER_REQUIREMENTS"
+      RequirementId="BBM_UNIT_FOUNDER_REQUIREMENTS_1"
+    />
+  </RequirementSetRequirements>
+  <RequirementSets>
+    <Row
+      RequirementSetId="BBM_UNIT_FOUNDER_REQUIREMENTS"
+      RequirementSetType="REQUIREMENTSET_TEST_ALL"
+    />
+  </RequirementSets>
+  <Requirements>
+    <Row
+      RequirementId="BBM_UNIT_FOUNDER_REQUIREMENTS_1"
+      RequirementType="REQUIREMENT_UNIT_TYPE_MATCHES"
+    />
+  </Requirements>
+  <RequirementArguments>
+    <Row
+      Name="UnitType"
+      RequirementId="BBM_UNIT_FOUNDER_REQUIREMENTS_1"
+      Value="UNIT_FOUNDER"
+    />
+  </RequirementArguments>
+</Database>

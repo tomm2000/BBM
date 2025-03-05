@@ -55,6 +55,17 @@ WHERE Tag = 'LOC_BUILDING_JALAW_DESCRIPTION';
 
 UPDATE LocalizedText
 SET Text = 'BBM : +4[icon:YIELD_SCIENCE] Science. +2[icon:YIELD_SCIENCE] Science if placed on Vegetation. +1[icon:YIELD_SCIENCE] Science Adjacency for Wonders. Can only be built once per empire. Mayan Unique Science Building. Ageless.'
-WHERE Tag = 'LOC_BUILDING_KUH_NAH_DESCRIPTION'
+WHERE Tag = 'LOC_BUILDING_KUH_NAH_DESCRIPTION';
+--========================================================================================================================
+--========================================================================================================================
+
+
+--========================================================================================================================
+-- Missisipi changes
+--========================================================================================================================
+-- Potkop UI: no base gold, instead gets +2 food +2 gold from adjacent resources
+UPDATE LocalizedText
+SET Text = 'BBM :+2[icon:YIELD_GOLD] Gold and +2[icon:YIELD_FOOD] Food for each adjacent Resource. Mississippian Unique Improvement. Ageless. Does not remove Warehouse bonuses on a tile. Must be placed on Flat Terrain.'
+WHERE Tag = 'LOC_IMPROVEMENT_POTKOP_DESCRIPTION';
 --========================================================================================================================
 --========================================================================================================================
