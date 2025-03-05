@@ -95,6 +95,25 @@ WHERE Tag = 'LOC_ANT_RESOURCE_LAPIS_LAZULI_TOOLTIP';
 -- economic, +2 gold (from +1) on gold buildings for each suized city state
 UPDATE LocalizedText
 SET Text = 'BBM : Gold buildings receive +2[icon:YIELD_GOLD] Gold for every City-State you are Suzerain of.'
-WHERE Tag = 'LOC_CITY_STATE_BONUS_ANTIQUITY_12_DESCRIPTION'
+WHERE Tag = 'LOC_CITY_STATE_BONUS_ANTIQUITY_12_DESCRIPTION';
+--========================================================================================================================
+--========================================================================================================================
+
+--========================================================================================================================
+-- Maya changes
+--========================================================================================================================
+-- civic modifier: The Altar gains a +1 Happiness (from 1 Science) Adjacency from Vegetated Terrain.
+UPDATE LocalizedText
+SET Text = 'BBM : The Altar gains a +1[icon:YIELD_HAPPINESS] Happiness Adjacency from Vegetated Terrain.'
+WHERE Tag = 'LOC_MOD_CHAAC_ALTAR_VEGETATION_ADJACENCY_DESCRIPTION';
+
+-- the calendar round bonuses now give 10% science/culture on masteries only
+UPDATE LocalizedText
+SET Text = 'BBM : After researching a Technology mastery, gain[icon:YIELD_CULTURE] Culture equal to 10% of its cost.'
+WHERE Tag = 'LOC_MOD_CALENDAR_ROUND_CULTURE_FOR_TECH_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'BBM : After studying a Civic mastery, gain[icon:YIELD_SCIENCE] Science equal to 10% of its cost.'
+WHERE Tag = 'LOC_MOD_CALENDAR_ROUND_SCIENCE_FOR_CIVIC_DESCRIPTION';
 --========================================================================================================================
 --========================================================================================================================

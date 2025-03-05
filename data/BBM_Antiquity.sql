@@ -73,8 +73,6 @@ WHERE ID = 'PantheonAltarVegetatedFeatureGold';
 UPDATE Warehouse_YieldChanges
 SET YieldChange = 2
 WHERE ID = 'PantheonAltarCampGold';
-
-
 --========================================================================================================================
 --========================================================================================================================
 
@@ -134,5 +132,21 @@ VALUES ('IMPROVEMENT_FARM', 'BBM_FarmChainFoodAdjacency', 1);
 
 INSERT INTO 'Adjacency_YieldChanges' ('ID','AdjacentBiome','AdjacentConstructible','AdjacentConstructibleTag','AdjacentDistrict','AdjacentFeature','AdjacentFeatureClass','AdjacentLake','AdjacentNaturalWonder','AdjacentNavigableRiver','AdjacentQuarter','AdjacentResource','AdjacentResourceClass','AdjacentRiver','AdjacentSeaResource','AdjacentTerrain','AdjacentUniqueQuarter','AdjacentUniqueQuarterType','Age','ProjectMaxYield','Self','TilesRequired','YieldChange','YieldType')
 VALUES ('BBM_FarmChainFoodAdjacency',NULL,'IMPROVEMENT_FARM',NULL,NULL,NULL,NULL,0,0,0,0,0,'NO_RESOURCECLASS',0,0,NULL,0,NULL,NULL,1,0,1,1.0,'YIELD_FOOD');
+--========================================================================================================================
+--========================================================================================================================
+
+
+--========================================================================================================================
+-- Maya changes
+--========================================================================================================================
+-- civic modifier: The Altar gains a +1 Happiness (from 1 Science) Adjacency from Vegetated Terrain.
+UPDATE Adjacency_YieldChanges
+SET YieldType = 'YIELD_HAPPINESS'
+WHERE ID = 'MayaAltarVegetatedScience';
+
+-- the calendar round bonuses now give 10% science/culture on masteries only
+UPDATE DynamicModifiers
+SET EffectType = 'TRIGGER_PLAYER_GRANT_YIELD_ON_MASTERY_COMPLETED'
+WHERE ModifierType = 'MOD_CALENDAR_ROUND_CULTURE_FOR_TECH_TYPE' OR ModifierType = 'MOD_CALENDAR_ROUND_SCIENCE_FOR_CIVIC_TYPE';
 --========================================================================================================================
 --========================================================================================================================

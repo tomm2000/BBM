@@ -77,7 +77,8 @@
 #### Maya
 - :small_red_triangle_down: Unique buidings: max 1 per empire.
 - :small_red_triangle_down: UQ, Every time you research a Technology, this Settlement gains :hammer: Production equal to 10% (from 15%) of its cost.
-
+- :small_red_triangle_down: Civic tree bonus: The Altar gains a +1 :slightly_smiling_face: Happiness (from 1 :alembic: Science) Adjacency from Vegetated Terrain.
+- :small_red_triangle_down: Calendar round civic bonuses give 10% culture/science when researching a tech/civic <u>mastery</u> (instead of from all techs/civics)
 
 # Exploration Age
 ## Religions
