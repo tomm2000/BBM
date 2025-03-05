@@ -17,6 +17,9 @@
 #### Fishing Quay & Fishing boat
 :heavy_plus_sign: New: Fishing quay +1 :coin: Gold on fishing boats. warehouse bonus.
 
+## Terrain balance
+#### Grassland
+:arrow_up: most grassland tiles get 2 :corn: Food (from 1) base yield
 
 # Antiquity Age
 ## Pantheons
