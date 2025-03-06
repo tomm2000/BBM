@@ -36,6 +36,13 @@
 ## Trade
 :arrow_up: Increased land trade route range to 15-20-25 (ages) from 10-15-20
 
+## Spawn conditions
+:twisted_rightwards_arrows: Increased major civilization spawn distance from 12 to 16
+
+## Random events (disasters)
+:twisted_rightwards_arrows: Decreased the chance of random event breaking a constructible by half
+:twisted_rightwards_arrows: Decreased the average damage dealt to units by half
+
 # Antiquity Age
 ## Pantheons
 #### Earth goddess
