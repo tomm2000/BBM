@@ -22,11 +22,11 @@
 :arrow_up: most grassland tiles get 2 :corn: Food (from 1) base yield
 
 #### Tropical
-:arrow_up: tropical rough terrain gets 1 :hammer: prod base yield (from 1 food) \
+:twisted_rightwards_arrows: tropical rough terrain gets 1 :hammer: prod base yield (from 1 food) \
 :arrow_up: tropical flat terrain gets 2 :corn: food base yield (from 1 food) 
 
 #### Tundra
-:arrow_up: tundra flat terrain gets 1 :musical_note: culture base yield (from 1 food) \
+:twisted_rightwards_arrows: tundra flat terrain gets 1 :musical_note: culture base yield (from 1 food) \
 :arrow_up: tundra floodplain terrain gets 2 :corn: food base yield (from 1 food)
 
 ## Leader balance
