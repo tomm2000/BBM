@@ -174,3 +174,32 @@ INSERT INTO Constructible_ValidTerrains
 ('IMPROVEMENT_SOUQ', 'TERRAIN_FLAT');
 --========================================================================================================================
 --========================================================================================================================
+
+
+--========================================================================================================================
+-- Trade routes
+--========================================================================================================================
+-- Increased trade route range
+UPDATE TradeSystemParameterSets
+SET LandTradeRouteRange = 15
+WHERE Type = 'TRADE_SYSTEM_PARAMSET_ANTIQUITY';
+
+UPDATE TradeSystemParameterSets
+SET LandTradeRouteRange = 20
+WHERE Type = 'TRADE_SYSTEM_PARAMSET_EXPLORATION';
+
+UPDATE TradeSystemParameterSets
+SET LandTradeRouteRange = 25
+WHERE Type = 'TRADE_SYSTEM_PARAMSET_MODERN';
+--========================================================================================================================
+--========================================================================================================================
+
+-- INSERT INTO "Affinities" ("Affinity","HostilityChance","NeutralityChance") VALUES ('AFFINITY_FRIENDLY',0,0),
+--  ('AFFINITY_NEUTRAL',80,100),
+--  ('AFFINITY_HOSTILE',80,100);
+
+-- Independent Raid
+
+-- "continents" table
+
+-- "difficulties" table

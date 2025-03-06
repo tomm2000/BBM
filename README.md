@@ -33,6 +33,9 @@
 #### Ada Lovelace
 :small_red_triangle_down:  Cities receive +1 (from +2) :alembic: Science per Age when you complete a Civic Mastery.
 
+## Trade
+:arrow_up: Increased land trade route range to 15-20-25 (ages) from 10-15-20
+
 # Antiquity Age
 ## Pantheons
 #### Earth goddess
