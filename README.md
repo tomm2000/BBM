@@ -68,7 +68,8 @@
 
 #### Economic suizerain bonus
 :arrow_up: Lapis Lazuli provides +6 :coin: Gold (from +4 prod) and +25% (from +5%) :coin: Gold in capital. \
-:arrow_up: :coin: Gold buildings receive +2 (from +1) :coin: Gold for every City-State you are Suzerain of.
+:arrow_up: :coin: Gold buildings receive +2 (from +1) :coin: Gold for every City-State you are Suzerain of.\
+:small_red_triangle_down: Emporium can only be placed on flat terrain.
 
 ## Civilizations
 #### Egypt
@@ -81,6 +82,13 @@
 :small_red_triangle_down: UQ, Every time you research a Technology, this Settlement gains :hammer: Production equal to 10% (from 15%) of its cost. \
 :small_red_triangle_down: Civic tree bonus: The Altar gains a +1 :slightly_smiling_face: Happiness (from 1 :alembic: Science) Adjacency from Vegetated Terrain. \
 :small_red_triangle_down: Calendar round civic bonuses give 10% culture/science when researching a tech/civic <ins>mastery</ins> (instead of from all techs/civics)
+
+#### Missisipi
+:arrow_up: Founder has more movement, is unimpeded by terrain and can see trough forests (WIP) \
+:arrow_up: Potkop UI: removed flat 1 gold, gains +2 :coin: gold +2 :corn: food adjacency from resources (from +1 :corn: food only). Cannot be placed adjacent to each other.
+
+## Resources
+:small_red_triangle_down: Wine: :musical_note: culture during celebrations nerfed from 10% to 5%.
 
 # Exploration Age
 ## Religions
@@ -113,3 +121,6 @@
 
 #### Sky Gods
 :small_red_triangle_down: +0.5 (from +2) :musical_note: Culture for every Plains tile in other Civilizations’ Settlements following your Religion.
+
+## Resources
+:small_red_triangle_down: Wine: :musical_note: culture during celebrations nerfed from 10% to 5%.

@@ -65,7 +65,22 @@ WHERE Tag = 'LOC_BUILDING_KUH_NAH_DESCRIPTION';
 --========================================================================================================================
 -- Potkop UI: no base gold, instead gets +2 food +2 gold from adjacent resources
 UPDATE LocalizedText
-SET Text = 'BBM :+2[icon:YIELD_GOLD] Gold and +2[icon:YIELD_FOOD] Food for each adjacent Resource. Mississippian Unique Improvement. Ageless. Does not remove Warehouse bonuses on a tile. Must be placed on Flat Terrain.'
+SET Text = 'BBM :+2[icon:YIELD_GOLD] Gold and +2[icon:YIELD_FOOD] Food for each adjacent Resource. Mississippian Unique Improvement. Ageless. Does not remove Warehouse bonuses on a tile. Must be placed on Flat Terrain. Cannot be placed adjacent to another Potkop.'
 WHERE Tag = 'LOC_IMPROVEMENT_POTKOP_DESCRIPTION';
+--========================================================================================================================
+--========================================================================================================================
+
+
+--========================================================================================================================
+-- Independent people
+--========================================================================================================================
+-- economic, emporium can only be placed on flat terrain
+UPDATE LocalizedText
+SET Text = 'BBM : +2[icon:YIELD_GOLD] Gold. +2[icon:YIELD_GOLD] Gold in Cities if they have at least one Resource assigned to them. City-State Unique Improvement. Does not remove Warehouse bonuses on a tile. Must be placed on Flat Terrain. Cannot be placed adjacent to another Emporium.'
+WHERE Tag = 'LOC_IMPROVEMENT_SOUQ_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'BBM : +2[icon:YIELD_GOLD] Gold in Cities if they have at least one Resource assigned to them. City-State Unique Improvement. Does not remove Warehouse bonuses on a tile. Must be placed on Flat Terrain. Cannot be placed adjacent to another Emporium.'
+WHERE Tag = 'LOC_IMPROVEMENT_SOUQ_TOOLTIP';
 --========================================================================================================================
 --========================================================================================================================

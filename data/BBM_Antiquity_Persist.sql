@@ -98,11 +98,11 @@ WHERE ConstructibleType = 'BUILDING_KUH_NAH';
 DELETE FROM StartBiasTerrains
 WHERE CivilizationType = 'CIVILIZATION_MISSISSIPPIAN' AND TerrainType = 'TERRAIN_FLAT';
 
--- Potkop UI: no base gold
+-- Potkop UI: no base gold...
 DELETE FROM Constructible_YieldChanges
 WHERE ConstructibleType = 'IMPROVEMENT_POTKOP' AND YieldType = 'YIELD_GOLD';
 
--- instead gets +2 food +2 gold from adjacent resources
+-- ...instead gets +2 food +2 gold from adjacent resources...
 DELETE FROM Constructible_Adjacencies
 WHERE ConstructibleType = 'IMPROVEMENT_POTKOP';
 
@@ -117,6 +117,11 @@ VALUES ('IMPROVEMENT_POTKOP', 'BBM_PotkopResourceFood', 0);
 
 INSERT INTO Constructible_Adjacencies (ConstructibleType, YieldChangeId, RequiresActivation)
 VALUES ('IMPROVEMENT_POTKOP', 'BBM_PotkopResourceGold', 0);
+
+-- ...cannot be adjacent to each other
+UPDATE Improvements
+VALUES SameAdjacentValid = 0
+WHERE ConstructibleType = 'IMPROVEMENT_POTKOP';
 --========================================================================================================================
 --========================================================================================================================
 
@@ -132,5 +137,16 @@ WHERE YieldChange = 1
   AND BiomeType = 'BIOME_GRASSLAND'
   AND YieldType = 'YIELD_FOOD'
   AND ScaleByGameAge = 0;
+--========================================================================================================================
+--========================================================================================================================
+
+
+--========================================================================================================================
+-- Independent people
+--========================================================================================================================
+-- economic, emporium can only be placed on flat terrain
+INSERT INTO Constructible_ValidTerrains
+("ConstructibleType", "TerrainType") VALUES
+('IMPROVEMENT_SOUQ', 'TERRAIN_FLAT');
 --========================================================================================================================
 --========================================================================================================================
