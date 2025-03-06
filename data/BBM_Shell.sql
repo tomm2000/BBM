@@ -13,13 +13,17 @@
 -- SET DefaultValue = '0'
 -- WHERE parameterId = 'CrisesEnabled';
 
--- UPDATE Parameters
--- SET DefaultValue = MAPSIZE_STANDARD
--- WHERE parameterId = 'MapSize';
+UPDATE Parameters
+SET SupportsLANMultiplayer = 0, SupportsInternetMultiplayer = 0
+WHERE parameterId = 'MapSize';
 
--- UPDATE Parameters
--- SET DefaultValue = 'MAPSIZE_STANDARD', Domain = 'DistantLandsMapSizes'
--- WHERE parameterId = 'MapSize';
+UPDATE Parameters
+SET SupportsLANMultiplayer = 0, SupportsInternetMultiplayer = 0
+WHERE parameterId = 'MapSize';
+
+INSERT INTO "Parameters"
+("Key1","Key2","ParameterID","Name","Description","Domain","Hash","Array","DefaultValue","ConfigurationGroup","ConfigurationKey","DomainConfigurationKey","PossibleValuesConfigurationKey","ValueConfigurationKey","ValueNameConfigurationKey","ValueHashConfigurationKey","ValueDomainConfigurationKey","NameArrayConfigurationKey","GroupID","Hidden","ReadOnly","SupportsSinglePlayer","SupportsLANMultiplayer","SupportsInternetMultiplayer","IsUGC","ChangeableAfterGameStart","UxHint","SortIndex") VALUES 
+(NULL,NULL,'MapSize','LOC_MAP_SIZE','LOC_MAPSIZE_DESCRIPTION','StandardMapSizes',1,0,'MAPSIZE_STANDARD','Map','SizeType',NULL,NULL,'SizeTypeName','SizeName',NULL,NULL,NULL,'MapOptions',0,0,0,1,1,0,0,NULL,220);
 
 -- UPDATE Parameters
 -- SET DefaultValue = '1'
