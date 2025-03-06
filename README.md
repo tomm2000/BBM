@@ -40,7 +40,7 @@
 :twisted_rightwards_arrows: Increased major civilization spawn distance from 12 to 16
 
 ## Random events (disasters)
-:twisted_rightwards_arrows: Decreased the chance of random event breaking a constructible by half
+:twisted_rightwards_arrows: Decreased the chance of random event breaking a constructible by half \
 :twisted_rightwards_arrows: Decreased the average damage dealt to units by half
 
 # Antiquity Age
