@@ -120,7 +120,7 @@ VALUES ('IMPROVEMENT_POTKOP', 'BBM_PotkopResourceGold', 0);
 
 -- ...cannot be adjacent to each other
 UPDATE Improvements
-VALUES SameAdjacentValid = 0
+SET SameAdjacentValid = 0
 WHERE ConstructibleType = 'IMPROVEMENT_POTKOP';
 --========================================================================================================================
 --========================================================================================================================
@@ -170,7 +170,8 @@ WHERE BiomeType = 'BIOME_TUNDRA' AND TerrainType = 'TERRAIN_FLAT' AND FeatureTyp
 --========================================================================================================================
 -- economic, emporium can only be placed on flat terrain
 INSERT INTO Constructible_ValidTerrains
-("ConstructibleType", "TerrainType") VALUES
+("ConstructibleType", "TerrainType")
+VALUES
 ('IMPROVEMENT_SOUQ', 'TERRAIN_FLAT');
 --========================================================================================================================
 --========================================================================================================================
@@ -181,15 +182,15 @@ INSERT INTO Constructible_ValidTerrains
 --========================================================================================================================
 -- Increased trade route range
 UPDATE TradeSystemParameterSets
-SET LandTradeRouteRange = 15
+SET LandRouteRange = 15
 WHERE Type = 'TRADE_SYSTEM_PARAMSET_ANTIQUITY';
 
 UPDATE TradeSystemParameterSets
-SET LandTradeRouteRange = 20
+SET LandRouteRange = 20
 WHERE Type = 'TRADE_SYSTEM_PARAMSET_EXPLORATION';
 
 UPDATE TradeSystemParameterSets
-SET LandTradeRouteRange = 25
+SET LandRouteRange = 25
 WHERE Type = 'TRADE_SYSTEM_PARAMSET_MODERN';
 --========================================================================================================================
 --========================================================================================================================

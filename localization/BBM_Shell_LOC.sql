@@ -71,7 +71,7 @@ WHERE Tag = 'LOC_TRAIT_LEADER_ADA_LOVELACE_ABILITY_DESCRIPTION';
 --========================================================================================================================
 -- Potkop UI: no base gold, instead gets +2 food +2 gold from adjacent resources
 UPDATE LocalizedText
-SET Text = 'BBM :+2[icon:YIELD_GOLD] Gold and +2[icon:YIELD_FOOD] Food for each adjacent Resource. Mississippian Unique Improvement. Ageless. Does not remove Warehouse bonuses on a tile. Must be placed on Flat Terrain.'
-WHERE Tag = 'LOC_IMPROVEMENT_POTKOP_DESCRIPTION'
+SET Text = 'BBM :+2[icon:YIELD_GOLD] Gold and +2[icon:YIELD_FOOD] Food for each adjacent Resource. Mississippian Unique Improvement. Ageless. Does not remove Warehouse bonuses on a tile. Must be placed on Flat Terrain. Cannot be placed adjacent to another Potkop.'
+WHERE Tag = 'LOC_IMPROVEMENT_POTKOP_DESCRIPTION';
 --========================================================================================================================
 --========================================================================================================================

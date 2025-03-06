@@ -68,6 +68,7 @@
         <UpdateText>
           <Item>localization/BBM_Antiquity_LOC.sql</Item>
           <Item>localization_xml/BBM_ChainFarmUnlock_LOC.xml</Item>
+          <Item>localization_xml/BBM_Maurya.xml</Item>
         </UpdateText>
         <UpdateDatabase>
           <Item>data/BBM_Antiquity.sql</Item>

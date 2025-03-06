@@ -154,10 +154,14 @@ WHERE ModifierType = 'MOD_CALENDAR_ROUND_CULTURE_FOR_TECH_TYPE' OR ModifierType 
 --========================================================================================================================
 -- Maurya changes
 --========================================================================================================================
--- second pantheon delayed to the last unique civic 
-UPDATE RequirementArguments
-SET Value = 'NODE_CIVIC_AQ_MAURYA_MANTRIPARISHAD'
-WHERE RequirementId = 'TRAIT_MOD_DHAMMA_LIPI_PANTHEON_SUBJECT_REQUIREMENTS_1' AND Name = 'ProgressionTreeNodeType';
+-- second pantheon delayed to the last unique civic NODE_CIVIC_AQ_MAURYA_MANTRIPARISHAD
+-- NOTE: the modifier has been removed from the trait and added to the civic node
+DELETE FROM TraitModifiers
+WHERE ModifierId = 'TRAIT_MOD_DHAMMA_LIPI_PANTHEON' AND TraitType = 'TRAIT_MAURYA_ABILITY';
+
+UPDATE ModifierArguments
+SET Value = 1
+WHERE ModifierId = 'TRAIT_MOD_DHAMMA_LIPI_PANTHEON' AND Name = 'Amount';
 
 INSERT INTO ProgressionTreeNodeUnlocks
 ("ProgressionTreeNodeType", "TargetType", "TargetKind", "UnlockDepth")
@@ -199,16 +203,16 @@ WHERE Name = 'START_DISTANCE_MAJOR_CIVILIZATION';
 --========================================================================================================================
 -- Random events, halfed the change of constructible damage
 UPDATE RandomEventDamages
-SET Percentage = FLOOR(0.5 * Percentage)
+SET Percentage = 0.5 * Percentage
 WHERE DamageType = 'CONSTRUCTIBLE_DAMAGED';
 
 -- Random events, halfed the average damage dealt to units
 UPDATE RandomEventDamages
-SET MaxHP = FLOOR(0.5 * MaxHP)
+SET MaxHP = 0.5 * MaxHP
 WHERE DamageType = 'UNIT_DAMAGED';
 
 UPDATE RandomEventDamages
-SET MinHP = FLOOR(0.5 * MinHP)
+SET MinHP = 0.5 * MinHP
 WHERE DamageType = 'UNIT_DAMAGED';
 --========================================================================================================================
 --========================================================================================================================
