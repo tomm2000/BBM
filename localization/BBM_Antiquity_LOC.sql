@@ -120,6 +120,21 @@ WHERE Tag = 'LOC_MOD_CALENDAR_ROUND_SCIENCE_FOR_CIVIC_DESCRIPTION';
 
 
 --========================================================================================================================
+-- Maurya changes
+--========================================================================================================================
+-- second pantheon delayed to the last unique civic 
+UPDATE LocalizedText
+SET Text = 'BBM : You can choose an additional Pantheon after unlocking Mantriparishad.'
+WHERE Tag = 'LOC_CIVILIZATION_MAURYA_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'BBM : [LIST][LI]You can choose an additional [B]Pantheon [/B]after unlocking [B]Mantriparishad[/B].[LI][B]+30% [icon:YIELD_PRODUCTION] Production [/B]towards constructing [B]Sanchi Stupa[/B].[/LIST]'
+WHERE Tag = 'LOC_TRAIT_MAURYA_ABILITY_DESCRIPTION';
+--========================================================================================================================
+--========================================================================================================================
+
+
+--========================================================================================================================
 -- Resources
 --========================================================================================================================
 -- Wine: happiness in celebration: 5% (from 10%)
