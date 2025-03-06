@@ -88,7 +88,8 @@
 :arrow_up: Potkop UI: removed flat 1 gold, gains +2 :coin: gold +2 :corn: food adjacency from resources (from +1 :corn: food only). Cannot be placed adjacent to each other.
 
 ## Resources
-:small_red_triangle_down: Wine: :musical_note: culture during celebrations nerfed from 10% to 5%.
+#### Wine
+:small_red_triangle_down: :musical_note: culture during celebrations nerfed from 10% to 5%.
 
 # Exploration Age
 ## Religions
@@ -123,4 +124,5 @@
 :small_red_triangle_down: +0.5 (from +2) :musical_note: Culture for every Plains tile in other Civilizations’ Settlements following your Religion.
 
 ## Resources
-:small_red_triangle_down: Wine: :musical_note: culture during celebrations nerfed from 10% to 5%.
+#### Wine
+:small_red_triangle_down: :musical_note: culture during celebrations nerfed from 10% to 5%.
