@@ -137,6 +137,30 @@ WHERE YieldChange = 1
   AND BiomeType = 'BIOME_GRASSLAND'
   AND YieldType = 'YIELD_FOOD'
   AND ScaleByGameAge = 0;
+
+-- Tropical terrain: +2 food (from +1 food) base on flat terrain
+UPDATE TerrainBiomeFeature_YieldChanges
+SET YieldChange = 2
+WHERE BiomeType = 'BIOME_TROPICAL' AND TerrainType = 'TERRAIN_FLAT' AND FeatureType IS NULL;
+
+UPDATE TerrainBiomeFeature_YieldChanges
+SET YieldChange = 2
+WHERE BiomeType = 'BIOME_TROPICAL' AND TerrainType = 'TERRAIN_FLAT' AND FeatureType = 'FEATURE_TROPICAL_FLOODPLAIN_MINOR';
+
+-- Tropical terrain: +1 prod (from +1 food) base on rough terrain
+UPDATE TerrainBiomeFeature_YieldChanges
+SET YieldType = 'YIELD_PRODUCTION'
+WHERE BiomeType = 'BIOME_TROPICAL' AND TerrainType = 'TERRAIN_HILL' AND FeatureType IS NULL;
+
+-- Tundra terrain: +1 culture (from +1 food) base on flat terrain
+UPDATE TerrainBiomeFeature_YieldChanges
+SET YieldType = 'YIELD_CULTURE'
+WHERE BiomeType = 'BIOME_TUNDRA' AND TerrainType = 'TERRAIN_FLAT' AND FeatureType IS NULL;
+
+-- Tundra terrain: +2 food (from +1 food) base on floodplain terrain
+UPDATE TerrainBiomeFeature_YieldChanges
+SET YieldChange = 2
+WHERE BiomeType = 'BIOME_TUNDRA' AND TerrainType = 'TERRAIN_FLAT' AND FeatureType = 'FEATURE_TUNDRA_FLOODPLAIN_MINOR';
 --========================================================================================================================
 --========================================================================================================================
 
