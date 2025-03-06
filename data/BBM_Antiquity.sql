@@ -152,6 +152,27 @@ WHERE ModifierType = 'MOD_CALENDAR_ROUND_CULTURE_FOR_TECH_TYPE' OR ModifierType 
 
 
 --========================================================================================================================
+-- Maurya changes
+--========================================================================================================================
+-- second pantheon delayed to the last unique civic 
+UPDATE RequirementArguments
+SET Value = 'NODE_CIVIC_AQ_MAURYA_MANTRIPARISHAD'
+WHERE RequirementId = 'TRAIT_MOD_DHAMMA_LIPI_PANTHEON_SUBJECT_REQUIREMENTS_1' AND Name = 'ProgressionTreeNodeType';
+
+INSERT INTO ProgressionTreeNodeUnlocks
+("ProgressionTreeNodeType", "TargetType", "TargetKind", "UnlockDepth")
+VALUES
+('NODE_CIVIC_AQ_MAURYA_MANTRIPARISHAD', 'TRAIT_MOD_DHAMMA_LIPI_PANTHEON', 'KIND_MODIFIER', 1);
+
+INSERT INTO ModifierStrings
+("Context", "ModifierId", "Text")
+VALUES
+('Description', 'TRAIT_MOD_DHAMMA_LIPI_PANTHEON', 'BBM_LOC_TRAIT_MOD_DHAMMA_LIPI_PANTHEON');
+--========================================================================================================================
+--========================================================================================================================
+
+
+--========================================================================================================================
 -- Resources
 --========================================================================================================================
 -- Wine: happiness in celebration: 5% (from 10%)

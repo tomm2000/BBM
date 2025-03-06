@@ -105,6 +105,9 @@
 :arrow_up: Founder has more movement, is unimpeded by terrain and can see trough forests (WIP) \
 :arrow_up: Potkop UI: removed flat 1 gold, gains +2 :coin: gold +2 :corn: food adjacency from resources (from +1 :corn: food only). Cannot be placed adjacent to each other.
 
+#### Maurya
+:small_red_triangle_down: Delayed second pantheon choice to the Mantriparishad unique civic.
+
 ## Resources
 #### Wine
 :small_red_triangle_down: :musical_note: culture during celebrations nerfed from 10% to 5%.
