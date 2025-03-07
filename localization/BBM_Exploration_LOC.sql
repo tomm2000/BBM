@@ -51,7 +51,7 @@ WHERE Tag = 'LOC_BELIEF_BONUS_27_DESCRIPTION';
 -- 'Sky Gods' belief only gives 0.5 culture per plains instead of 1
 UPDATE LocalizedText
 SET Text = 'BBM : +0.5[icon:YIELD_CULTURE] Culture for every Plains tile in other Civilizations’ Settlements following your Religion.'
-WHERE Tag = 'LOC_BELIEF_BONUS_28_DESCRIPTION'
+WHERE Tag = 'LOC_BELIEF_BONUS_28_DESCRIPTION';
 --========================================================================================================================
 --========================================================================================================================
 
